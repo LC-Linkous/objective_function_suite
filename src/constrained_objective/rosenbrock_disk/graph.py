@@ -65,7 +65,7 @@ surf = ax1.plot_surface(X, Y, Z, cmap='viridis', edgecolor='none')
 ax1.set_xlabel('$x_1$')
 ax1.set_ylabel('$x_2$')
 ax1.set_zlabel('$f(x_1,x_2)$')
-ax1.set_title('3D Projection')
+ax1.set_title('Disk Constrained Rosenbrock: 3D Projection of Solution Space')
 
 # Contour plot subplot
 ax2 = fig.add_subplot(122)
@@ -79,7 +79,7 @@ for gm in GLOBAL_MIN:
 # Add labels
 ax2.set_xlabel('$x_1$')
 ax2.set_ylabel('$x_2$')
-ax2.set_title('Contour Plot')
+ax2.set_title('Disk Constrained Rosenbrock: Contour Plot of Solution Space')
 
 # Add color bar for contour plot
 fig.colorbar(contour, ax=ax2, label="$f(x_1,x_2)$")
