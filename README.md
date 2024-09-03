@@ -3,11 +3,17 @@
 
 # IN PROGRESS. Last update Sept. 2, 2024
 TODO list:
+
 [ ] Add AntennaCAT set functions
+
 [ ] Add blurbs for single input, single objective functions
+
 [ ] Update headers to match code migration
+
 [ ] Cosmetic graph fixes for README
+
 [ ] Update summary tables in README
+
 
 
 ## Table of Contents
@@ -1794,6 +1800,7 @@ L. Linkous, J. Lundquist, M. Suche and E. Topsakal, "Machine Learning Assisted H
 
 
 Other Publications:
+
 L. Linkous and E. Topsakal, "Machine Learning Assisted Optimization Methods for Automated Antenna Design," 2024 United States National Committee of URSI National Radio Science Meeting (USNC-URSI NRSM), Boulder, CO, USA, 2024, pp. 377-378, doi: 10.23919/USNC-URSINRSM60317.2024.10464597.
 
 L. Linkous, J. Lundquist and E. Topsakal, "AntennaCAT: Automated Antenna Design and Tuning Tool," 2023 IEEE USNC-URSI Radio Science Meeting (Joint with AP-S Symposium), Portland, OR, USA, 2023, pp. 89-90, doi: 10.23919/USNC-URSI54200.2023.10289238.
