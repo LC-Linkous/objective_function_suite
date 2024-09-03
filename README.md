@@ -1,6 +1,14 @@
-# IN PROGRESS
 
 # Objective Function Suite
+
+# IN PROGRESS. Last update Sept. 2, 2024
+TODO list:
+[ ] Add AntennaCAT set functions
+[ ] Add blurbs for single input, single objective functions
+[ ] Update headers to match code migration
+[ ] Cosmetic graph fixes for README
+[ ] Update summary tables in README
+
 
 ## Table of Contents
 * [Project Description](#project-description)
