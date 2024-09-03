@@ -1,0 +1,24 @@
+#! /usr/bin/python3
+
+##-------------------------------------------------------------------------------\
+#   Optimizer Benchmarking
+#   './multi_objective/ctp1_2_vars/func_F.py'
+#   objective function for function compatable with project optimizers
+#
+#   Author(s): Lauren Linkous (LINKOUSLC@vcu.edu)
+#   Last update: May 28, 2024
+##-------------------------------------------------------------------------------\
+
+import numpy as np
+
+def func_F(X, NO_OF_OUTS=2):
+    F = np.zeros((NO_OF_OUTS))
+    noError = True
+    try:
+        x1, x2 = X[0], X[1]
+        F[0] = x1
+        F[1] = (1+x2)*np.exp(-(x1/(1+x2)))
+    except:
+        noError = False
+
+    return F, noError
