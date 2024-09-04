@@ -4,9 +4,10 @@
 # IN PROGRESS. Last update Sept. 2, 2024
 TODO list:
 
+
 [ ] Add AntennaCAT set functions
 
-[ ] Add blurbs for single input, single objective functions
+[x] Add blurbs for single input, single objective functions
 
 [ ] Update headers to match code migration
 
@@ -91,7 +92,7 @@ TODO list:
 
 
 ## Project Description
-This repository is an archive of the benchmarking functions used to collected performance data from the set of optimizers used in the development of AntennaCAT. The repository is under development. Additional information, citations, functions, and variations are continuously added as features are developed, optimizers are tested, and publications are released. 
+This repository is an archive of the benchmarking functions used to collect performance data from the set of optimizers used in the development of AntennaCAT. The repository is under development. Additional information, citations, functions, and variations are continuously added as features are developed, optimizers are tested, and publications are released. 
 
 
 Objective function references are cited in their individual sections. Supporting literature and other references of interest can be viewed in the [References](#references) section at the end of this README. When possible, multiple references were used for each objective function to provide more resources if they should be of interest.  
@@ -130,11 +131,11 @@ zipp==3.18.1
 
 Objective functions are organized into the following directories:
 
-* antennacat_set
-* constrained_objective
-* multi_objective
-* single_objective
-* single_objective_single_output
+   1) antennacat_set - objective functions created for testing edge cases or balancing datasets.
+   2) constrained_objective - objective functions with enforced  constraints. The unconstrained version may appear in other directories.
+   3) multi_objective - multi objective (multiple output) objective functions. The objective functions take one or more input values.
+   4) single_objective - single objective (single output) objective functions. The objective functions take one or more input values.
+   5) single_objective_single_output - single objective functions that take only one input value. These were created specifically to balance that dataset used for training in the AntennaCAT project. 
 
 Each of the listed directories contains sub-directories of objective functions where each objective function has its own directory containing at least:
    1) configs_F.py - contains imports for the objective function and constraints, CONSTANT assignments for functions and labeling, boundary ranges, the number of input variables, the number of output values, and the target values for the output
@@ -147,7 +148,7 @@ When possible, a file for graphing the objective function and select features (e
 ## Benchmark Functions
 ### Single-Input, Single-Objective Functions
 
-In usage, all single-dimension input and single-dimenson output functions were constrained from 0 to 1. These are articifial constraints and can be changed in the configs_F.py file.
+In usage, all single-dimension input and single-dimension output functions were constrained from 0 to 1. These are artificial constraints and can be changed in the configs_F.py file.
 
 
 #### Single Input Ackley Function
@@ -162,7 +163,7 @@ In usage, all single-dimension input and single-dimenson output functions were c
 In mathematical optimization, the Ackley function is a non-convex function used as a performance test problem for optimization algorithms. It was proposed by David Ackley in his 1987 PhD dissertation. [wiki](https://en.wikipedia.org/wiki/Ackley_function "Ackley function page")
 
 ```math
-f(x) = -20 \exp\left(-0.2 \sqrt(|x|)) \right) - \exp\left(\cos(2 \pi x)\right) + 20 + e
+f(x) = -20 \exp\left(-0.2 \sqrt|x| \right) - \exp\left(\cos(2 \pi x)\right) + 20 + e
 ```
 Where:
 - $x$ is the single decision variable input.
@@ -185,7 +186,7 @@ Where:
 <p align="center">One Dimensional Griewank Plot, Constrained Input 0 to 1</p>
 
 
-The Griewank function is a popular benchmark function used in optimization problems due to its many widespread local minima, which are regularly distributed. The presence of the cosine term with a frequency that depends on $x$ ensures that the function has a series of local minima and maxima, making it a challenging function to optimize.  [SFU Page](https://www.sfu.ca/~ssurjano/griewank.html "Griewank function page")
+The Griewank function is a popular benchmark function used in optimization problems. The presence of the cosine term with a frequency that depends on $x$ ensures that the function has a series of local minima and maxima, making it a challenging function to optimize.  [SFU page](https://www.sfu.ca/~ssurjano/griewank.html "Griewank function page")
 
 ```math
 f(x) = 1 + \frac{x^2}{4000} - \cos\left(\frac{x}{\sqrt{1}}\right)
@@ -210,6 +211,27 @@ Where:
 <p align="center">One Dimensional Rastrigin Plot, Constrained Input 0 to 1</p>
 
 
+In mathematical optimization, the Rastrigin function is a non-convex function used as a performance test problem for optimization algorithms. It is a typical example of non-linear multimodal function. [wiki](https://en.wikipedia.org/wiki/Rastrigin_function "Rastrigin Function Page") 
+
+
+```math
+f(x) = An + \sum_{i=1}^{n} \left[ x_i^2 - A \cos(2 \pi x_i) \right]
+
+```
+Where:
+- $x$ is the single decision variable input.
+- The optimal solution is at $f(x) = 0$, where $x = 0$.
+
+
+| Global Minima | Boundary | Constraints |
+|----------|----------|----------|
+| f(0) = 0 | $0\leq x,y\leq 1$ (artificial) |   | 
+
+| Local Minima | Boundary | Constraints |
+|----------|----------|----------|
+| f(1) = 1 | $0\leq x,y\leq 1$ (artificial) |   | 
+
+
 
 #### Single Input Rosenbrock Function
 
@@ -221,6 +243,23 @@ Where:
 <p align="center">One Dimensional Rosenbrock Plot, Constrained Input 0 to 1</p>
 
 
+The Rosenbrock function, also known as the Rosenbrock's valley or Rosenbrock's banana function, is a non-convex optimization problem that is widely used as a benchmark problem. [wiki](https://en.wikipedia.org/wiki/Rosenbrock_function "Rosenbrock Function Page") 
+
+
+
+```math
+f(x) = (1-x)^2 + 100*(x-1)^2
+
+```
+
+Where:
+- $x$ is the single decision variable input.
+- The optimal solution is at $f(x) = 0$, where $x = 1$.
+
+
+| Global Minima | Boundary | Constraints |
+|----------|----------|----------|
+| f(1) = 0 | $0\leq x,y\leq 1$ (artificial) |   | 
 
 
 #### Single Input Schwefel Function
@@ -233,6 +272,23 @@ Where:
 <p align="center">One Dimensional Schwefel Plot, Constrained Input 0 to 1</p>
 
 
+The Schwefel function is a popular benchmark function used in optimization problems.  [SFU page](https://www.sfu.ca/~ssurjano/schwef.html "Schwefel function page")
+
+
+```math
+f(x) = x * sin(\sqrt|x|)
+
+```
+Where:
+- $x$ is the single decision variable input.
+- The optimal solution is at $f(x) = 0$, where $x = 0$.
+
+
+| Global Minima | Boundary | Constraints |
+|----------|----------|----------|
+| f(0) = 0 | $0\leq x,y\leq 1$ (artificial) |   | 
+
+
 #### Single Input Sphere Function
 
 ---
@@ -241,6 +297,24 @@ Where:
  <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/one_input_sphere_plots.png" height="300" >
 </p>
 <p align="center">One Dimensional Sphere Plot, Constrained Input 0 to 1</p>
+
+
+The sphere function is one of the simplest optimization test functions. It can be utilized in $n$ dimensions, where it will have $n$ local minima except for the global one. It is continuous, convex and unimodal. [SFU page](https://www.sfu.ca/~ssurjano/spheref.html "Sphere function example") 
+
+```math
+f(x) = x^2
+
+```
+Where:
+- $x$ is the single decision variable input.
+- The optimal solution is at $f(x) = 0$, where $x = 0$.
+
+
+| Global Minima | Boundary | Constraints |
+|----------|----------|----------|
+| f(0) = 0 | $0\leq x,y\leq 1$ (artificial) |   | 
+
+
 
 
 ### Single-Objective Functions
@@ -1754,12 +1828,12 @@ This repository is an archive of objective functions used to test and debug the 
 
 [9] C. M. Fonseca and P. J. Fleming, “An overview of evolutionary algorithms in multiobjective optimization,” Evolutionary Computation, vol. 3, no. 1, pp. 1–16, Mar. 1995. doi:10.1162/evco.1995.3.1.1
 
+[10] M. Jamil and X. S. Yang, “A literature survey of benchmark functions for global optimisation problems,” International Journal of Mathematical Modelling and Numerical Optimisation, vol. 4, no. 2, p. 150, 2013, doi: https://doi.org/10.1504/ijmmno.2013.055204.
 
 
 
 Specific reference links:
 * https://infinity77.net/global_optimization/test_functions.html#test-functions-index 
-
 
 
 * https://www.sfu.ca/~ssurjano/beale.html 
@@ -1778,6 +1852,7 @@ Specific reference links:
 * https://www.sfu.ca/~ssurjano/michal.html
 * https://www.sfu.ca/~ssurjano/schaffer2.html
 * https://www.sfu.ca/~ssurjano/schaffer4.html
+* https://www.sfu.ca/~ssurjano/schwef.html
 * https://www.sfu.ca/~ssurjano/spheref.html
 * https://www.sfu.ca/~ssurjano/stybtang.html
 * https://www.sfu.ca/~ssurjano/camel3.html
