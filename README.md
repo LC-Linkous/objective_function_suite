@@ -619,6 +619,11 @@ The Levy Function N.13 has a complicated and disjoint geometry, making it diffic
 f(\mathbf{x}) = \sin^2(3 \pi x_1) + \sum_{i=1}^{n-1} \left[ (x_i - 1)^2 \left(1 + \sin^2(3 \pi x_{i+1})\right) \right] + (x_n - 1)^2 \left(1 + \sin^2(2 \pi x_n)\right)
 ```
 
+
+Where:
+* $n$ is the dimensionality of the problem
+
+
 | Global Minima | Boundary | Constraints |
 |----------|----------|----------|
 | f(1,...,1) = 0| $-10 \leq x,y \leq 10$ |   | 
@@ -686,16 +691,16 @@ f(x, y) = \sin(x + y) + (x - y)^2 - 1.5x + 2.5y + 1
 <p align="center">Michalewicz Function 3D Projection and 2D Contour Plot, Global Minima Candidate in Red</p>
 
 
-The Michalewicz function is a 2-dimensional artificial landscape used to evaluate optimizer performance. If has $d$ number of local minima, where $d$ is the dimensionality the function is evaluated at. The 2-dimensional case is used here, but literature has used higher dimensionality. [SFU page](https://www.sfu.ca/~ssurjano/michal.html "Michalewicz function example") 
+The Michalewicz function is a 2-dimensional artificial landscape used to evaluate optimizer performance. If has $n$ number of local minima, where $n$ is the dimensionality the function is evaluated at. The 2-dimensional case is used here, but literature has used higher dimensionality. [SFU page](https://www.sfu.ca/~ssurjano/michal.html "Michalewicz function example") 
 
 
 ```math
-f(x, y) = -\sum_{i=1}^{d} sin(x_i)*sin^{2m}(\frac{i*(x_i)^2}{\pi})
+f(x, y) = -\sum_{i=1}^{n} sin(x_i)*sin^{2m}(\frac{i*(x_i)^2}{\pi})
 
 ```
 
 Where:
-* $d$ is the dimensionality of the problem
+* $n$ is the dimensionality of the problem
 * $m$ is a constant, often $10$. This defines the steepness of the valleys and ridges. 
 
 | Global Minima | Boundary | Constraints |
@@ -793,10 +798,6 @@ In the 2-dimensional form it has a global minima at $(x,y)=(a,a^2)$, where $f(x,
 </p>
 <p align="center">Zoomed in Single-Objective Schaffer Function N.2 3D Projection and 2D Contour Plot, Global Minima Candidate in Red</p>
 
-<p align="center">
- <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/schaffer_N2_plots_3.png" height="300" >
-</p>
-<p align="center">Zoomed in To Center Single-Objective Schaffer Function N.2 3D Projection and 2D Contour Plot, Global Minima Candidate in Red</p>
 
 
 There are two versions of the Schaffer Function N.2. The single-objective function has a global minimum at (0,0) with a function value of 0. It is known for its many local minima and is used to test the ability of optimization algorithms to escape local minima and find the global minimum. [SFU page](https://www.sfu.ca/~ssurjano/schaffer2.html "Schaffer N.2 function example") 
@@ -819,17 +820,17 @@ f(x, y) = 0.5 + \frac{\sin^2(x^2 - y^2) - 0.5}{[1 + 0.001(x^2 + y^2)]^2}
 <p align="center">
  <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/schaffer_N4_plots_1.png" height="300" >
 </p
-<p align="center">Schaffer Function N.4 3D Projection and 2D Contour Plot, Global Minima Candidate in Red</p>
+<p align="center">Schaffer Function N.4 3D Projection and 2D Contour Plot, Example Global Minima Candidate in Red</p>
 
 <p align="center">
  <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/schaffer_N4_plots_2.png" height="300" >
 </p>
-<p align="center">Zoomed in Schaffer Function N.4 3D Projection and 2D Contour Plot, Global Minima Candidate in Red</p>
+<p align="center">Zoomed in Schaffer Function N.4 3D Projection and 2D Contour Plot, Example Global Minima Candidate in Red</p>
 
 <p align="center">
  <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/schaffer_N4_plots_2.png" height="300" >
 </p>
-<p align="center">Zoomed in to Center Schaffer Function N.4 3D Projection and 2D Contour Plot, Global Minima Candidate in Red</p>
+<p align="center">Zoomed in to Center Schaffer Function N.4 3D Projection and 2D Contour Plot, Example Global Minima Candidate in Red</p>
 
 
 The fourth Schaffer function has a large number local minima, and four equal global minima candidates. [SFU page](https://www.sfu.ca/~ssurjano/schaffer4.html "Schaffer N.4 function example") 
