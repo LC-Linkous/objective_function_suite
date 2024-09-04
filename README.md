@@ -171,7 +171,7 @@ Where:
 
 | Global Minima | Boundary | Constraints |
 |----------|----------|----------|
-| f(0) = 0| $0\leq x,y\leq 1$ (artificial) |   | 
+| f(0) = 0| $0\leq x\leq 1$ (artificial) |   | 
 
 
 
@@ -197,7 +197,7 @@ Where:
 
 | Global Minima | Boundary | Constraints |
 |----------|----------|----------|
-| f(0) = 0| $0\leq x,y\leq 1$ (artificial) |   | 
+| f(0) = 0| $0\leq x\leq 1$ (artificial) |   | 
 
 
 
@@ -225,11 +225,11 @@ Where:
 
 | Global Minima | Boundary | Constraints |
 |----------|----------|----------|
-| f(0) = 0 | $0\leq x,y\leq 1$ (artificial) |   | 
+| f(0) = 0 | $0\leq x\leq 1$ (artificial) |   | 
 
 | Local Minima | Boundary | Constraints |
 |----------|----------|----------|
-| f(1) = 1 | $0\leq x,y\leq 1$ (artificial) |   | 
+| f(1) = 1 | $0\leq x\leq 1$ (artificial) |   | 
 
 
 
@@ -259,7 +259,7 @@ Where:
 
 | Global Minima | Boundary | Constraints |
 |----------|----------|----------|
-| f(1) = 0 | $0\leq x,y\leq 1$ (artificial) |   | 
+| f(1) = 0 | $0\leq x\leq 1$ (artificial) |   | 
 
 
 #### Single Input Schwefel Function
@@ -286,7 +286,7 @@ Where:
 
 | Global Minima | Boundary | Constraints |
 |----------|----------|----------|
-| f(0) = 0 | $0\leq x,y\leq 1$ (artificial) |   | 
+| f(0) = 0 | $0\leq x\leq 1$ (artificial) |   | 
 
 
 #### Single Input Sphere Function
@@ -312,7 +312,7 @@ Where:
 
 | Global Minima | Boundary | Constraints |
 |----------|----------|----------|
-| f(0) = 0 | $0\leq x,y\leq 1$ (artificial) |   | 
+| f(0) = 0 | $0\leq x\leq 1$ (artificial) |   | 
 
 
 
@@ -358,11 +358,14 @@ f(x, y) = -20 \exp\left(-0.2 \sqrt{\frac{1}{n}*(x^2 + y^2)}\right) - \exp\left(\
 </p>
 <p align="center">Beale Function 3D Projection and 2D Contour Plot, Global Minima Candidate in Red</p>
 
-The Beale function is multimodal, with sharp peaks at the corners of the input domain. [SFU page](https://www.sfu.ca/~ssurjano/beale.html "Beale function example")
+The Beale function is multimodal, with sharp peaks at the corners of the input domain. It takes two inputs. [SFU page](https://www.sfu.ca/~ssurjano/beale.html "Beale function example")
+
 
 ```math
 f(x, y) = (1.5 - x + xy)^2 + (2.25 - x + xy^2)^2 + (2.625 - x + xy^3)^2
 ```
+
+
 
 | Global Minima | Boundary | Constraints |
 |----------|----------|----------|
@@ -605,7 +608,7 @@ f(x, y) = -\left| \sin(x) \cos(y) \exp\left| 1 - \frac{\sqrt{x^2 + y^2}}{\pi} \r
 <p align="center">
  <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/levy_N13_plots.png" height="300" >
 </p>
-<p align="center">Lévi Function 3D Projection and 2D Contour Plot, Global Minima Candidate in Red</p>
+<p align="center">Levy Function 3D Projection and 2D Contour Plot, Global Minima Candidate in Red</p>
 
 
 
@@ -613,13 +616,19 @@ The Levy Function N.13 has a complicated and disjoint geometry, making it diffic
 
 
 ```math
-   f(x, y) = \sin^2(3\pi x) + (x - 1)^2[1 + \sin^2(3\pi y)] + (y - 1)^2[1 + \sin^2(2\pi y)]
+f(\mathbf{x}) = \sin^2(3 \pi x_1) + \sum_{i=1}^{n-1} \left[ (x_i - 1)^2 \left(1 + \sin^2(3 \pi x_{i+1})\right) \right] + (x_n - 1)^2 \left(1 + \sin^2(2 \pi x_n)\right)
 ```
 
 | Global Minima | Boundary | Constraints |
 |----------|----------|----------|
-| f(1,1) = 0| $-10 \leq x,y \leq 10$ |   | 
+| f(1,...,1) = 0| $-10 \leq x,y \leq 10$ |   | 
 
+
+It is used in this repository as a 2-dimensional function:
+
+```math
+   f(x, y) = \sin^2(3\pi x) + (x - 1)^2[1 + \sin^2(3\pi y)] + (y - 1)^2[1 + \sin^2(2\pi y)]
+```
 
 
 #### Matyas Function
