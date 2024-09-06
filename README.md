@@ -959,8 +959,8 @@ This is a 2-dimensional input, multi-objective function commonly used for optimi
 ```math
 \text{minimize}: 
 \begin{cases}
-f(x,y) = 4x^2 + 4y^2 \\
-f(x,y) = (x-5)^2 + (y-5)^2
+f_{1}(x,y) = 4x^2 + 4y^2 \\
+f_{2}(x,y) = (x-5)^2 + (y-5)^2
 \end{cases}
 ```
 
@@ -990,8 +990,8 @@ The Chankong and Haimes Function is a 2-dimensional input, multi-objective funct
 ```math
 \text{minimize}: 
 \begin{cases}
-f(x,y) = 2 + (x-2)^2 + (y-1)^2 \\
-f(x,y) = 9x - (y - 1) ^ 2
+f_{1}(x,y) = 2 + (x-2)^2 + (y-1)^2 \\
+f_{2}(x,y) = 9x - (y - 1) ^ 2
 \end{cases}
 ```
 
@@ -1018,8 +1018,8 @@ The Constr-Ex (Constrained-Exponential) problem is a 2-dimensional mathematical 
 ```math
 \text{minimize}: 
 \begin{cases}
-f(x,y) = x \\
-f(x,y) = \frac{1+y}{x}
+f_{1}(x,y) = x \\
+f_{2}(x,y) = \frac{1+y}{x}
 \end{cases}
 ```
 
@@ -1245,8 +1245,8 @@ Poloni's Two Objective Function is a 2-dimensional, multi-objective function com
 ```math
 \text{minimize}: 
 \begin{cases}
-f(x,y) = [1+(A_{1}-B_{1}(x,y))^2 + (A_{2}-B_{2}(x,y))^2] \\
-f(x,y) = (x+3)^2 + (y+1)^2
+f_{1}(x,y) = [1+(A_{1}-B_{1}(x,y))^2 + (A_{2}-B_{2}(x,y))^2] \\
+f_{2}(x,y) = (x+3)^2 + (y+1)^2
 \end{cases} \\
 ```
 ```math
@@ -1345,8 +1345,8 @@ Test Function 4/Test Case 4 is a 2-dimensional, multi-objective function commonl
 ```math
 \text{minimize}: 
 \begin{cases}
-f(x,y) = x^2 - y \\
-f(x,y) = -0.5x - y - 1
+f_{1}(x,y) = x^2 - y \\
+f_{2}(x,y) = -0.5x - y - 1
 \end{cases}
 ```
 
@@ -1382,17 +1382,6 @@ f_{3}(x,y) = \frac{1}{x^2+y^2+1} - 1.1\exp(-(x^2+y^2))
 | Num. Input Variables| Boundary | Constraints |
 |----------|----------|----------|
 | 2      | $-3\leq x,y\leq 3$|    | 
-
-
-**Additional Constraints**
-
-<p align="center">
- <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/viennet_plots_additional_constraints.png" height="300" >
-</p>
-<p align="center">Viennet Feasible Decision Space and Objective Space with Pareto Front, with Additional Constraints Applied</p>
-
-Additional error checking and handling were added to this function's constr_F.py script to handle FloatingPointErrors caused by under/overflow. This additions were not observed to change the results of the Decision Space, Objective Space, or Pareto front.
-
 
 
 #### Zitzler–Deb–Thiele's Function N.1
@@ -1443,19 +1432,6 @@ h(f_{1}\mathbf(x), g\mathbf(x)) = 1- \sqrt{\frac{f_{1}\mathbf(x)}{g\mathbf(x)}}
 | 1-30| $0\leq x\leq 1$ <br>  $1\leq i \leq 30$ |  | 
  
 In this repository, Zitzler–Deb–Thiele's Function N.1 is evaluated and shown above with 1 input, 2 input, and 3 input variations. A generalized function is included for completeness (and to retain name scheme), but the folder does not include the graphing function. 
-
-**Additional Constraints**
-
-<p align="center">
- <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/ZDT_N1_2var_output_additional_constraints.png" height="300" >
-</p>
- <p align="center">Zitzler–Deb–Thiele's Function N.1 Feasible Decision Space and Objective Space with Pareto Front for 2 Variables, with Additional Constraints Applied</p>
-<p align="center">
- <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/ZDT_N1_3var_output_additional_constraints.png" height="300" >
-</p>
- <p align="center">Zitzler–Deb–Thiele's Function N.1 Feasible Decision Space and Objective Space with Pareto Front for 3 Variables, with Additional Constraints Applied</p>
-
-Additional error checking and handling were added to this function's constr_F.py script to handle FloatingPointErrors caused by under/overflow. This additions were not observed to change the results of the Decision Space, Objective Space, or Pareto front. It did not need to be applied to the 1-variable function.
 
 
 #### Zitzler–Deb–Thiele's Function N.2
@@ -1562,25 +1538,6 @@ In this repository, Zitzler–Deb–Thiele's Function N.3 is evaluated and shown
 
 
 
-**Additional Constraints**
-
-<p align="center">
- <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/ZDT_N3_1var_output_additional_constraints.png" height="300" >
-</p>
-<p align="center">Zitzler–Deb–Thiele's Function N.3 Feasible Decision Space and Objective Space with Pareto Front for 1 Variable, with Additional Constraints Applied</p>
-<p align="center">
- <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/ZDT_N3_2var_output_additional_constraints.png" height="300" >
-</p>
- <p align="center">Zitzler–Deb–Thiele's Function N.3 Feasible Decision Space and Objective Space with Pareto Front for 2 Variables, with Additional Constraints Applied</p>
-<p align="center">
- <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/ZDT_N3_3var_output_additional_constraints.png" height="300" >
-</p>
- <p align="center">Zitzler–Deb–Thiele's Function N.3 Feasible Decision Space and Objective Space with Pareto Front for 3 Variables, with Additional Constraints Applied</p>
-
-Additional error checking and handling were added to this function's constr_F.py script to handle FloatingPointErrors caused by under/overflow. This additions were not observed to change the results of the Decision Space, Objective Space, or Pareto front. 
-
-
-
 #### Zitzler–Deb–Thiele's Function N.4
 
 ---
@@ -1599,11 +1556,9 @@ Additional error checking and handling were added to this function's constr_F.py
  <p align="center">Zitzler–Deb–Thiele's Function N.4 Feasible Decision Space and Objective Space with Pareto Front for 2 to 7 Variables</p>
 
  <p align="center">
- <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/zitzler_deb_thiele_N4_plots_pareto.png" height="300" >
+ <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/zitzler_deb_thiele_N4_plots_pareto_1.png" height="300" >
 </p>
-<p align="center">Zitzler–Deb–Thiele's Function N.3 Pareto Front for 2 to 7 Variables (All Perfectly Overlapped)</p>
-
-
+<p align="center">Zitzler–Deb–Thiele's Function N.4 Pareto Front for 2 to 7 Variables (BEING ADDED)</p>
 
 
 Zitzler–Deb–Thiele's Function N.4 is a multi-dimensional, 2-objective function commonly used for optimization performance evaluation. (Viennet R, Fonteix C, Marc I (1996) Multicriteria optimization using a genetic algorithm for determining a Pareto set. Intl J Syst Sci
