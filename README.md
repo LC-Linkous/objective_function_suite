@@ -951,6 +951,8 @@ f(x, y) = 2x^2 - 1.05x^4 + \frac{x^6}{6} + xy + y^2
 This is a 2-dimensional input, multi-objective function commonly used for optimization performance evaluation. 
 
 "Test Case 1": (T. T. Binh and U. Korn, “Scalar optimization with linear and nonlinear constraints using Evolution Strategies,” Computational Intelligence Theory and Applications, pp. 381–392, 1997. doi:10.1007/3-540-62868-1_130 ) 
+
+
 "Test Case 2": (Binh T. and Korn U. (1997) MOBES: A Multiobjective Evolution Strategy for Constrained Optimization Problems)
 
 
@@ -1010,7 +1012,7 @@ f(x,y) = 9x - (y - 1) ^ 2
 <p align="center">Constr-Ex Problem Feasible Decision Space and Objective Space with Pareto Front</p>
 
 
-The Constr-Ex (Constrained-Exponential) problem is a mathematical optimization problem where the objective is to minimize a nonlinear objective function subject to nonlinear constraints. (Deb, Kalyanmoy (2002) Multiobjective optimization using evolutionary algorithms (Repr. ed.). Chichester: Wiley. ISBN 0-471-87339-X.)
+The Constr-Ex (Constrained-Exponential) problem is a 2-dimensional mathematical optimization problem where the objective is to minimize a nonlinear objective function subject to nonlinear constraints. (Deb, Kalyanmoy (2002) Multiobjective optimization using evolutionary algorithms (Repr. ed.). Chichester: Wiley. ISBN 0-471-87339-X.)
 
 
 ```math
@@ -1059,7 +1061,7 @@ f_{2}(x,y) = (1+y)\exp(\frac{-x}{1+y})
 </p>
 <p align="center">CTP1 (2 variable) Feasible Decision Space and Objective Space with Pareto Front, with Additional Constraints Applied</p>
 
-Additional error checking and handling were added to this function's constr_F.py script to handle FloatingPointErrors caused by under/overflow. This additions were not observed to change the results of the Decision Space, Objective Space, or Pareto front.
+Additional error checking and handling were added to this function's constr_F.py script to handle FloatingPointErrors caused by under/overflow. The additions were observed to have some impact on the shape of the pareto front and Feasible Objective Space.
 
 
 
@@ -1083,11 +1085,17 @@ Additional error checking and handling were added to this function's constr_F.py
  <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/fonseca_fleming_plots_5_var.png" height="300" >
 </p>
 <p align="center">Fonseca Fleming Feasible Decision Space and Objective Space with Pareto Front for 5 Variables</p>
-<p align="center">
- <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/fonseca_fleming_plots_pareto.png" height="300" >
-</p>
-<p align="center">Fonseca Fleming Pareto Front for 1 to 6 Variables</p>
 
+<p align="center">
+ <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/fonseca_fleming_plots_pareto_1.png.png" height="300" >
+</p>
+<p align="center">Fonseca Fleming Pareto Front for 1 to 5 Variables with Objective Space</p>
+
+
+<p align="center">
+ <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/fonseca_fleming_plots_pareto_2.png.png" height="300" >
+</p>
+<p align="center"> Comparison of Fonseca Fleming Pareto Front for 1 to 5 Variables</p>
  
 
 The Fonseca–Fleming Function is a multi-dimensional input, multi-objective function commonly used for optimization performance evaluation. (Fonseca, C. M.; Fleming, P. J. (1995). "An Overview of Evolutionary Algorithms in Multiobjective Optimization". Evol Comput. 3 (1): 1–16. )
