@@ -1,22 +1,6 @@
 
 # Objective Function Suite
 
-# IN PROGRESS. Last update Sept. 2, 2024
-TODO list:
-
-
-[ ] Add AntennaCAT set functions
-
-[x] Add blurbs for single input, single objective functions
-
-[ ] Update headers to match code migration
-
-[ ] Cosmetic graph fixes for README
-
-[ ] Update summary tables in README
-
-
-
 ## Table of Contents
 * [Project Description](#project-description)
 * [Requirements](#requirements)
@@ -77,7 +61,7 @@ TODO list:
     * [AntennaCAT Objective Function Set](#antennacat-objective-function-set)
         * [AntennaCAT Function 1](#antennacat-function-1)
         * [AntennaCAT Function 2](#antennacat-function-2)
-        * [AntennaCAT Function 3](#antennacat-function-3) (STEP)
+        * [AntennaCAT Function 3](#antennacat-function-3)
         * [AntennaCAT Function 10](#antennacat-function-10)
         * [AntennaCAT Function 11](#antennacat-function-11)
         * [AntennaCAT Function 12](#antennacat-function-12)
@@ -408,7 +392,7 @@ The Booth function is a 2-dimensional input artificial landscape commonly used f
 The Branin function, or Branin-Hoo function, is a 2-dimensional input artificial landscape commonly used for optimization performance evaluation. It has three global minimia. [SFU page](https://www.sfu.ca/~ssurjano/branin.html "Branin function example") 
 
 ```math
- f(x, y) = a*(y-b*(x**2)+c*x-r)**2 + s*(1-t)*np.cos(x)+1
+ f(x, y) = a*(y-b*(x^2)+c*x-r)^2 + s*(1-t)*cos(x)+1
 ```
 
 Where the constants are:
@@ -1086,16 +1070,11 @@ Additional error checking and handling were added to this function's constr_F.py
 </p>
 <p align="center">Fonseca Fleming Feasible Decision Space and Objective Space with Pareto Front for 5 Variables</p>
 
-<p align="center">
- <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/fonseca_fleming_plots_pareto_1.png.png" height="300" >
-</p>
-<p align="center">Fonseca Fleming Pareto Front for 1 to 5 Variables with Objective Space</p>
-
 
 <p align="center">
- <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/fonseca_fleming_plots_pareto_2.png.png" height="300" >
+ <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/fonseca_fleming_plots_pareto_1_6.png" height="300" >
 </p>
-<p align="center"> Comparison of Fonseca Fleming Pareto Front for 1 to 5 Variables</p>
+<p align="center"> Comparison of Fonseca Fleming Pareto Front for 1 to 6 Variables</p>
  
 
 The Fonseca–Fleming Function is a multi-dimensional input, multi-objective function commonly used for optimization performance evaluation. (Fonseca, C. M.; Fleming, P. J. (1995). "An Overview of Evolutionary Algorithms in Multiobjective Optimization". Evol Comput. 3 (1): 1–16. )
@@ -1247,7 +1226,7 @@ Poloni's Two Objective Function is a 2-dimensional, multi-objective function com
 \begin{cases}
 f_{1}(x,y) = [1+(A_{1}-B_{1}(x,y))^2 + (A_{2}-B_{2}(x,y))^2] \\
 f_{2}(x,y) = (x+3)^2 + (y+1)^2
-\end{cases} \\
+\end{cases}
 ```
 ```math
 \text{where}: 
@@ -1698,12 +1677,184 @@ f(x, y) =  \left[(a-x)^2 + b(y-x^2)^2 \right]
 ## AntennaCAT Objective Function Set
 This section contains functions created for testing specific edge cases with the optimizers integrated with AntennaCAT. These functions are not attributed to any particular author and do not come from any particular literature. Additional functions will be added as they are included in the benchmarking process.
 
+#### AntennaCAT Function 1
+
+---
+
+<p align="center">
+ <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/antennacat_func1_1_in_1_out_plots.png" height="300" >
+</p>
+<p align="center">One Dimensional AntennaCAT Function 1, Constrained Input 0 to 1</p>
+
+
+AntennaCAT Function 1 is a single-input, single-objective function with a global minima and a local minima when constrained between 0 and 1.
+
+
+
+```math
+f(x) = sin(5x^3) + cos(5x)*(1-tanh(x^2))
+
+```
+
+Where:
+- $x$ is the single decision variable input.
+- The optimal solution is at $f(x) = -0.95$, where $x = 0.97$.
+
+
+| Global Minima | Boundary | Constraints |
+|----------|----------|----------|
+| f(0.97) = -0.95 | $0\leq x\leq 1$ (artificial) |   | 
+
+
+| Local Minima | Boundary | Constraints |
+|----------|----------|----------|
+| f(0.44) = -0.04 | $0\leq x\leq 1$ (artificial) |   | 
+
+
+#### AntennaCAT Function 2
+
+---
+
+<p align="center">
+ <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/antennacat_func1_1_in_1_out_plots.png" height="300" >
+</p>
+<p align="center">One Dimensional AntennaCAT Function 1, Constrained Input 0 to 1</p>
+
+
+AntennaCAT Function 2 is a single-input, single-objective function with a global minima and a local minima when constrained between 0 and 1.
+
+
+
+```math
+f(x) = sin(10x^5) + cos(5x)*(1-tanh(x^3))
+
+```
+
+Where:
+- $x$ is the single decision variable input.
+- The optimal solution is at $f(x) = -1.18$, where $x = 0.86$.
+
+
+| Global Minima | Boundary | Constraints |
+|----------|----------|----------|
+| f(0.86) = -1.18 | $0\leq x\leq 1$ (artificial) |   | 
+
+
+| Local Minima | Boundary | Constraints |
+|----------|----------|----------|
+| f(0.48) = -0.4 | $0\leq x\leq 1$ (artificial) |   | 
+
+
+#### AntennaCAT Function 3
+
+---
+
+<p align="center">
+ <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/antennacat_func3_1_in_1_out_plots.png" height="300" >
+</p>
+<p align="center">One Dimensional AntennaCAT Function 1, Constrained Input 0 to 1</p>
+
+
+AntennaCAT Function 3 is a modified step function with several discontinuities.
+
+```math
+\text{minimize}: 
+\begin{cases}
+f(x) = 1, if x < 0 \\
+f(x) = 0, if x = 0 \\
+f(x) = .5, if 0< x \leq 0.25 \\
+f(x) = 1, if 0.25 < x \leq 0.3 \\
+f(x) = 1.25, if 0.3 <> x \leq 0.4 \\
+f(x) = 1.5, if 0.4 < x \leq 0.5 \\
+f(x) = 1.25, if 0.5 < x \leq 0.75 \\
+f(x) = 2, x > 0.75 \\
+\end{cases}
+```
+
+Where:
+- $x$ is the single decision variable input.
+- The optimal solution is at $f(x) = 0$, where $x=0$.
+
+
+
+#### AntennaCAT Function 10
+
+---
+
+<p align="center">
+ <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/antennacat_function10_3_var_1_obj_plot.png" height="300" >
+</p>
+<p align="center">One Dimensional AntennaCAT Function 10 with 3 Inputs, Constrained Input 0 to 1</p>
+
+
+<p align="center">
+ <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/antennacat_function10_3_var_2_obj_plots.png" height="300" >
+</p>
+<p align="center">Two Dimensional AntennaCAT Function 10 with 3 Inputs, Constrained Input 0 to 1</p>
+
+<p align="center">
+ <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/antennacat_function10_4_var_1_obj_plots.png" height="300" >
+</p>
+<p align="center">One Dimensional AntennaCAT Function 10 with 4 Inputs, Constrained Input 0 to 1</p>
+
+
+<p align="center">
+ <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/antennacat_function10_4_var_2_obj_plots.png" height="300" >
+</p>
+<p align="center">Two Dimensional AntennaCAT Function 10 with 4 Inputs, Constrained Input 0 to 1</p>
+
+
+AntennaCAT Function 10 is a function with single and multi-objective forms. 
+
+```math
+\begin{align*}
+f(\mathbf{x}) = \sin\left(\prod_{i=0}^{x_{n-1}} x_i\right) + \cos(x_1^3)\\
+f(\mathbf{x_{n-1}}) = 1 - x_1
+\end{align*}
+```
+
+Where:
+- $x$ is an array of inputs.
+- $n$ is the number of inputs.
+
+
+
+
+#### AntennaCAT Function 11
+
+---
+
+<p align="center">
+ <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/antennacat_function11_4_var_1_obj_plot.png" height="300" >
+</p>
+<p align="center">One Dimensional AntennaCAT Function 11 with 4 Inputs, Constrained Input 0 to 1</p>
+
+
+<p align="center">
+ <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/antennacat_function11_4_var_2_obj_plots.png" height="300" >
+</p>
+<p align="center">Two Dimensional AntennaCAT Function 11 with 4 Inputs, Constrained Input 0 to 1</p>
+
+
+
+AntennaCAT Function 11 is a function with single and multi-objective forms. 
+
+```math
+\begin{align*}
+f(\mathbf{x}) = 0.5 * \sin(\prod(\mathbf{x})+ x_0^3)  + sin(x_0^2) 
+\end{align*}
+```
+
+Where:
+- $x$ is an array of inputs.
+- $n$ is the number of inputs.
+
+
+
 
 
 
 ## Function Summary
-
-CLEANUP IN PROGRESS
 
 ### Single-Objective Function Summary
 
