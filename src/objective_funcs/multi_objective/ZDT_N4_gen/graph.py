@@ -2,7 +2,7 @@
 
 ##-------------------------------------------------------------------------------\
 #   Optimizer Benchmarking
-#   '.src/objective_funcs/multi_objective/kursawe_gen/graph.py'
+#   '.src/objective_funcs/multi_objective/ZDT_N4_gen/graph.py'
 #   generates graphs for function based on constraints and configurations
 #
 #   Author(s): Lauren Linkous (LINKOUSLC@vcu.edu)
@@ -16,27 +16,29 @@ import matplotlib.pyplot as plt
 
 import configs_F as f_c
 # problem constraints - pulled from the function configs for the optimizers
-# lower and upper bounds: LB = -5, UB= 5 for all cases
+# lower and upper bounds: LB = 0, UB= 1 for all cases
 LOWER_BOUNDS = f_c.LB[0]
 UPPER_BOUNDS = f_c.UB[0]
-LB_x = LOWER_BOUNDS[0] 
-UB_x = UPPER_BOUNDS[0] 
+LB_x1 = LOWER_BOUNDS[0]  # the first bounds are different
+UB_x1 = UPPER_BOUNDS[0]  # the first bounds are different 
+LB_xother = LOWER_BOUNDS[1] 
+UB_xother = UPPER_BOUNDS[1] 
 # objective function and constr are the same for all cases
 FUNC_F = f_c.OBJECTIVE_FUNC
 CONSTR_F = f_c.CONSTR_FUNC
 
-# The kursawe function can be used for 1:n variables.
-MIN_DIM = 1
-MAX_DIM = 4 # No given upper limit
-NUM_SAMPLES = 4
+# The ZDT_N4 function can be used for 2:10 variables.
+MIN_DIM = 2
+MAX_DIM = 3
+NUM_SAMPLES = 2
 NUM_DIENSIONS = np.linspace(MIN_DIM, MAX_DIM, NUM_SAMPLES)
 NUM_ROW = 2  # For subplots
 NUM_COL = 2  # For subplots
-NUM_POINTS = 10 # Number of points for each dimension
+NUM_POINTS = 20 # Number of points for each dimension
 
-#for exporting df to csv
-filename = 'kursawe_pareto_coords_output.csv'
-plotname = 'kursawe_plots.png'
+#writing out the pareto front to a csv for comparison
+filepath = "ZDT4_pareto_coords_output.csv"
+plotname = "ZDT4_output.png"
 
 
 def pareto_front(X, Y, minimize=True):
@@ -66,9 +68,12 @@ def calculateParetoAndPlot(num_dim, fig, subplt_idx):
 
     # Create dynamic list of input vals
     x_dims = []
-    for _ in range(0, num_dim):
+    for idx in range(0, num_dim):
         # Define range and step size
-        x = np.linspace(LB_x, UB_x, NUM_POINTS)
+        if idx == 0:
+            x = np.linspace(LB_x1, UB_x1, NUM_POINTS)
+        else:
+            x = np.linspace(LB_xother, UB_xother, NUM_POINTS)
         x_dims.append(x)
 
     # Make into grid
@@ -86,6 +91,7 @@ def calculateParetoAndPlot(num_dim, fig, subplt_idx):
             objective_space, noErr = FUNC_F(c)
             if noErr == True:
                 paretoCoords.append(objective_space)
+
 
     # Convert paretoCoords to a NumPy array
     paretoCoords = np.array(paretoCoords)
@@ -107,8 +113,8 @@ def calculateParetoAndPlot(num_dim, fig, subplt_idx):
         objective_space = ax.scatter(objective_x.flatten(), objective_y.flatten(), color='c')
         ax.scatter(pareto_x, pareto_y, marker='*', color='black')
 
-        ax.set_xlabel('$f_{1}(...)$')
-        ax.set_ylabel('$f_{2}(...)$')
+        ax.set_xlabel('$f_{1}(x,y)$')
+        ax.set_ylabel('$f_{2}(x,y)$')
         ax.set_title('$i$ = ' + str(num_dim))
 
     return pareto_x, pareto_y # for writing out to csv
@@ -138,10 +144,13 @@ for dl in dimension_list:
     df = pd.concat([df, df_loop], axis=1) 
 
 # Write DataFrame to CSV
-df.to_csv(filename, index=False)  
+df.to_csv(filepath, index=False)  
 
-# Show plot
-plt.show()
+# Adjust layout
+plt.tight_layout()
 
 # Save Plot
 plt.savefig(plotname)
+
+# Show plot
+plt.show()
