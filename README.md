@@ -1825,7 +1825,7 @@ Where:
 ---
 
 <p align="center">
- <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/antennacat_function11_4_var_1_obj_plot.png" height="300" >
+ <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/antennacat_function11_4_var_1_obj_plots.png" height="300" >
 </p>
 <p align="center">One Dimensional AntennaCAT Function 11 with 4 Inputs, Constrained Input 0 to 1</p>
 
