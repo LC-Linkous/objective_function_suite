@@ -1716,7 +1716,7 @@ Where:
 ---
 
 <p align="center">
- <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/antennacat_func1_1_in_1_out_plots.png" height="300" >
+ <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/antennacat_func2_1_in_1_out_plots.png" height="300" >
 </p>
 <p align="center">One Dimensional AntennaCAT Function 1, Constrained Input 0 to 1</p>
 
@@ -1782,7 +1782,7 @@ Where:
 ---
 
 <p align="center">
- <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/antennacat_function10_3_var_1_obj_plot.png" height="300" >
+ <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/antennacat_function10_3_var_1_obj_plots.png" height="300" >
 </p>
 <p align="center">One Dimensional AntennaCAT Function 10 with 3 Inputs, Constrained Input 0 to 1</p>
 
@@ -1808,8 +1808,8 @@ AntennaCAT Function 10 is a function with single and multi-objective forms.
 
 ```math
 \begin{align*}
-f(\mathbf{x}) = \sin\left(\prod_{i=0}^{x_{n-1}} x_i\right) + \cos(x_1^3)\\
-f(\mathbf{x_{n-1}}) = 1 - x_1
+f(\mathbf{x}) = \sin\left(\prod_{i=0}^{x_{n-1}} x_i\right) + \cos(x_0^3)\\
+f(\mathbf{x_{n-1}}) = 1 - x_0
 \end{align*}
 ```
 
