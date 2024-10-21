@@ -41,9 +41,9 @@
         * [Chankong and Haimes Function](#chankong-and-haimes-function)
         * [Constr-Ex Problem](#constr-ex-problem)
         * [CTP1 function](#CTP1-function)
-        * [Deb-Thiele-Laumanns-Zitzler Function N.1](#)
-        * [Deb-Thiele-Laumanns-Zitzler Function N.2](#)        
-        * [Deb-Thiele-Laumanns-Zitzler Function N.3](#)
+        * [Deb-Thiele-Laumanns-Zitzler Function N.1](#deb-thiele-laumanns-zitzler-function-n1)
+        * [Deb-Thiele-Laumanns-Zitzler Function N.2](#deb-thiele-laumanns-zitzler-function-n2)        
+        * [Deb-Thiele-Laumanns-Zitzler Function N.3](#deb-thiele-laumanns-zitzler-function-n3)
         * [Fonseca–Fleming Function](#fonsecafleming-function)
         * [Kursawe Function](#kursawe-function)
         * [Lundquist 3 Variable](#lundquist-3-variable)
@@ -1056,23 +1056,26 @@ Additional error checking and handling were added to this function's constr_F.py
 
 ---
 
+
 <p align="center">
- <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/fonseca_fleming_plots_1_var.png" height="300" >
+ <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/DTLZ_N1_3_var_1_obj_plots.png" height="300" >
 </p>
-<p align="center">Fonseca Fleming Feasible Decision Space and Objective Space with Pareto Front for 1 Variable</p>
+<p align="center">One Dimensional DTLZ N.1 with 3 Inputs, Constrained Input 0 to 1</p>
+
+
+<p align="center">
+ <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/DTLZ_N1_3_var_3_obj_plots.png" height="300" >
+</p>
+<p align="center">Three Dimensional Dimensional DTLZ N.1 with 3 Inputs, Constrained Input 0 to 1</p>
+
+
 
 
 DTLZ (Deb-Thiele-Laumanns-Zitzler) problems are benchmark multi-objective optimization challenges designed to evaluate the performance of optimization algorithms. They feature continuous decision variables, scalable objectives, and known Pareto fronts with varying complexities. Common DTLZ problems include DTLZ1 to DTLZ7, each offering unique structures and characteristics for testing algorithms on trade-offs between competing objectives.
 
 
 ```math
-\text{minimize}: 
-\begin{cases}
-f_{1}\mathbf(x) = x_1 \\
-f_{2}\mathbf(x) = g\mathbf(x)h(f_{1}\mathbf(x), g\mathbf(x))\\
-g\mathbf(x) = 1 + \frac{9}{n-1}\sum\limits_{i=2}^{n}x_{i}\\
-h(f_{1}\mathbf(x), g\mathbf(x)) = 1- \sqrt{\frac{f_{1}\mathbf(x)}{g\mathbf(x)}}
-\end{cases}
+Equation TBA. 
 ```
 
 
