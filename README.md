@@ -2015,10 +2015,10 @@ AntennaCAT Function 12 is a function with single and multi-objective forms. In m
 
 ```math
 \begin{align*}
-f(\mathbf{x_i}) = \frac{1}{n} \left[ \sum_{j=0}^{n} \left( \cos\left(\frac{i \pi x_j}{n}\right) + \sin\left(\frac{i \pi x_j}{n}\right) \right) \right] 
-\end{align*}\\
-f(\mathbf{x_n}) = \sin\left(\frac{\pi x_{M-1}}{2}\right)
+f(\mathbf{x}_i) = \frac{1}{n} \left[ \sum_{j=0}^{n} \left( \cos\left(\frac{i \pi x_j}{n}\right) + \sin\left(\frac{i \pi x_j}{n}\right) \right) \right] \\
+f({x_n}) = \sin\left(\frac{\pi x_{M-1}}{2}\right)
 
+\end{align*}
 ```
 
 Where:
