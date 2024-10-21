@@ -1930,7 +1930,15 @@ Where:
 - $x$ is an array of inputs.
 - $n$ is the number of inputs.
 
+For data collection replicability, the following directories use the AntennaCAT function 10 with a variety of pre-set dimensionality:
 
+|Function | Directory Name| Num. Objective Functions | Num. Inputs | Example Boundaries | Constraints |
+|----------|----------|----------|----------|----------|----------|
+| AntennaCAT Set Function 10| antennacat_function10_3_var_1_obj    | 3   | 1   | $-0\leq \bf{x} \leq 1$              |         |
+| AntennaCAT Set Function 10| antennacat_function10_3_var_2_obj    | 3   | 2   | $-0\leq \bf{x} \leq 1$              |         |
+| AntennaCAT Set Function 10| antennacat_function10_4_var_1_obj    | 4   | 1   | $-0\leq \bf{x} \leq 1$              |         |
+| AntennaCAT Set Function 10| antennacat_function10_4_var_2_obj    | 4   | 2   | $-0\leq \bf{x} \leq 1$              |         |
+| AntennaCAT Set Function 10| antennacat_function10_5_var_1_obj    | 5   | 1   | $-0\leq \bf{x} \leq 1$              |         |
 
 
 #### AntennaCAT Function 11
@@ -1963,6 +1971,66 @@ Where:
 - $n$ is the number of inputs.
 
 
+For data collection replicability, the following directories use the AntennaCAT function 11 with a variety of pre-set dimensionality:
+
+|Function | Directory Name| Num. Objective Functions | Num. Inputs | Example Boundaries | Constraints |
+|----------|----------|----------|----------|----------|----------|
+| AntennaCAT Set Function 11| antennacat_function11_4_var_1_obj    | 4   | 1   | $-0\leq \bf{x} \leq 1$              |         |
+| AntennaCAT Set Function 11| antennacat_function11_4_var_2_obj    | 4   | 2   | $-0\leq \bf{x} \leq 1$              |         |
+
+
+
+
+#### AntennaCAT Function 12
+
+---
+
+<p align="center">
+ <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/antennacat_function12_3_var_1_obj_plots.png" height="300" >
+</p>
+<p align="center">One Dimensional AntennaCAT Function 12 with 3 Inputs, Constrained Input 0 to 1</p>
+
+
+<p align="center">
+ <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/antennacat_function12_3_var_2_obj_plots.png" height="300" >
+</p>
+<p align="center">Two Dimensional AntennaCAT Function 12 with 3 Inputs, Constrained Input 0 to 1</p>
+
+<p align="center">
+ <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/antennacat_function12_3_var_3_obj_plots.png" height="300" >
+</p>
+<p align="center">Three Dimensional AntennaCAT Function 12 with 3 Inputs, Constrained Input 0 to 1</p>
+
+
+
+<p align="center">
+ <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/antennacat_function12_4_var_2_obj_plots.png" height="300" >
+</p>
+<p align="center">Two Dimensional AntennaCAT Function 12 with 4 Inputs, Constrained Input 0 to 1</p>
+
+
+
+AntennaCAT Function 12 is a function with single and multi-objective forms. In multi-objective forms this function forms a 'horseshoe crab' pattern
+
+```math
+\begin{align*}
+f(\mathbf{x}) = 0.5 * \sin(\prod(\mathbf{x})+ x_0^3)  + sin(x_0^2) 
+\end{align*}
+```
+
+Where:
+- $x$ is an array of inputs.
+- $n$ is the number of inputs.
+
+
+For data collection replicability, the following directories use the AntennaCAT function 12 with a variety of pre-set dimensionality:
+
+|Function | Directory Name| Num. Objective Functions | Num. Inputs | Example Boundaries | Constraints |
+|----------|----------|----------|----------|----------|----------|
+| AntennaCAT Set Function 12| antennacat_function12_3_var_1_obj    | 3   | 1   | $-0\leq \bf{x} \leq 1$              |         |
+| AntennaCAT Set Function 12| antennacat_function12_3_var_2_obj    | 3   | 2   | $-0\leq \bf{x} \leq 1$              |         |
+| AntennaCAT Set Function 12| antennacat_function12_3_var_3_obj    | 3   | 3   | $-0\leq \bf{x} \leq 1$              |         |
+| AntennaCAT Set Function 12| antennacat_function12_4_var_2_obj    | 4   | 2   | $-0\leq \bf{x} \leq 1$              |         |
 
 #### AntennaCAT Function 13
 
@@ -1999,6 +2067,14 @@ Where:
 - $x$ is an array of inputs.
 - $n$ is the number of inputs.
 
+
+For data collection replicability, the following directories use the AntennaCAT function 13 with a variety of pre-set dimensionality:
+
+|Function | Directory Name| Num. Objective Functions | Num. Inputs | Example Boundaries | Constraints |
+|----------|----------|----------|----------|----------|----------|
+| AntennaCAT Set Function 13| antennacat_function13_3_var_1_obj    | 3   | 1   | $-0\leq \bf{x} \leq 1$              |         |
+| AntennaCAT Set Function 13| antennacat_function13_3_var_2_obj    | 3   | 2   | $-0\leq \bf{x} \leq 1$              |         |
+| AntennaCAT Set Function 13| antennacat_function13_4_var_2_obj    | 4   | 2   | $-0\leq \bf{x} \leq 1$              |         |
 
 
 ## Function Summary
@@ -2139,6 +2215,10 @@ Where:
 | AntennaCAT Set Function 10| antennacat_function10_5_var_1_obj    | 5   | 1   | $-0\leq \bf{x} \leq 1$              |         |
 | AntennaCAT Set Function 11| antennacat_function11_4_var_1_obj    | 4   | 1   | $-0\leq \bf{x} \leq 1$              |         |
 | AntennaCAT Set Function 11| antennacat_function11_4_var_2_obj    | 4   | 2   | $-0\leq \bf{x} \leq 1$              |         |
+| AntennaCAT Set Function 12| antennacat_function12_3_var_1_obj    | 3   | 1   | $-0\leq \bf{x} \leq 1$              |         |
+| AntennaCAT Set Function 12| antennacat_function12_3_var_2_obj    | 3   | 2   | $-0\leq \bf{x} \leq 1$              |         |
+| AntennaCAT Set Function 12| antennacat_function12_3_var_3_obj    | 3   | 3   | $-0\leq \bf{x} \leq 1$              |         |
+| AntennaCAT Set Function 12| antennacat_function12_4_var_2_obj    | 4   | 2   | $-0\leq \bf{x} \leq 1$              |         |
 | AntennaCAT Set Function 13| antennacat_function13_3_var_1_obj    | 3   | 1   | $-0\leq \bf{x} \leq 1$              |         |
 | AntennaCAT Set Function 13| antennacat_function13_3_var_2_obj    | 3   | 2   | $-0\leq \bf{x} \leq 1$              |         |
 | AntennaCAT Set Function 13| antennacat_function13_4_var_2_obj    | 4   | 2   | $-0\leq \bf{x} \leq 1$              |         |
