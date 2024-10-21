@@ -1964,6 +1964,37 @@ Where:
 
 
 
+#### AntennaCAT Function 13
+
+---
+
+<p align="center">
+ <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/antennacat_function13_4_var_1_obj_plots.png" height="300" >
+</p>
+<p align="center">One Dimensional AntennaCAT Function 13 with 4 Inputs, Constrained Input 0 to 1</p>
+
+
+<p align="center">
+ <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/antennacat_function13_4_var_2_obj_plots.png" height="300" >
+</p>
+<p align="center">Two Dimensional AntennaCAT Function 13 with 4 Inputs, Constrained Input 0 to 1</p>
+
+
+
+AntennaCAT Function 13 is a function with single and multi-objective forms. 
+
+```math
+\begin{align*}
+f(\mathbf{x}) = \frac{1}{n} \left[ \sum_{j=0}^{n} \left( \cos\left(\frac{i \pi x_j}{n}\right) + \sin\left(\frac{i \pi x_j}{n}\right) \right) \right] 
+\end{align*}
+```
+
+Where:
+- $x$ is an array of inputs.
+- $n$ is the number of inputs.
+
+
+
 
 
 
