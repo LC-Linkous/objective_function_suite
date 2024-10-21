@@ -41,6 +41,9 @@
         * [Chankong and Haimes Function](#chankong-and-haimes-function)
         * [Constr-Ex Problem](#constr-ex-problem)
         * [CTP1 function](#CTP1-function)
+        * [Deb-Thiele-Laumanns-Zitzler Function N.1](#)
+        * [Deb-Thiele-Laumanns-Zitzler Function N.2](#)        
+        * [Deb-Thiele-Laumanns-Zitzler Function N.3](#)
         * [Fonseca–Fleming Function](#fonsecafleming-function)
         * [Kursawe Function](#kursawe-function)
         * [Lundquist 3 Variable](#lundquist-3-variable)
@@ -2014,11 +2017,8 @@ AntennaCAT Function 12 is a function with single and multi-objective forms. In m
 
 
 ```math
-\begin{align*}
 f(\mathbf{x}_i) = \frac{1}{n} \left[ \sum_{j=0}^{n} \left( \cos\left(\frac{i \pi x_j}{n}\right) + \sin\left(\frac{i \pi x_j}{n}\right) \right) \right] \\
 f({x_n}) = \sin\left(\frac{\pi x_{M-1}}{2}\right)
-
-\end{align*}
 ```
 
 Where:
@@ -2119,6 +2119,20 @@ For data collection replicability, the following directories use the AntennaCAT 
 | Chankong and Haimes Function     | chankong_haimes              | 2 | 2   |$-20\leq x,y\leq 20$                      |   yes   |
 | Constr-Ex Problem                | constr_ex_problem            | 2 | 2   |$0.1\leq x\leq 1$ <br> $0\leq y\leq 5$    |   yes   |
 | CTP1 Function                    | ctp1_2_vars                  | 2 | 2   |$0\leq x,y\leq 1$                         |   yes   |
+| Deb-Thiele-Laumanns-Zitzler function N.1| DTLZ_N1_3_var_1_obj   | 3 | 1   | $-0\leq \bf{x} \leq 1$                   |         |
+| Deb-Thiele-Laumanns-Zitzler function N.1| DTLZ_N1_3_var_3_obj   | 3 | 3   | $-0\leq \bf{x} \leq 1$                   |         |
+| Deb-Thiele-Laumanns-Zitzler function N.1| DTLZ_N1_4_var_4_obj   | 4 | 4   | $-0\leq \bf{x} \leq 1$                   |         |
+| Deb-Thiele-Laumanns-Zitzler function N.1| DTLZ_N1_5_var_1_obj   | 5 | 1   | $-0\leq \bf{x} \leq 1$                   |         |
+| Deb-Thiele-Laumanns-Zitzler function N.1| DTLZ_N1_5_var_5_obj   | 5 | 5   | $-0\leq \bf{x} \leq 1$                   |         |
+| Deb-Thiele-Laumanns-Zitzler function N.1| DTLZ_N1_10_var_5_obj  | 10| 5   | $-0\leq \bf{x} \leq 1$                   |         |
+| Deb-Thiele-Laumanns-Zitzler function N.2| DTLZ_N2_3_var_3_obj   | 3 | 3   | $-0\leq \bf{x} \leq 1$                   |         |
+| Deb-Thiele-Laumanns-Zitzler function N.2| DTLZ_N2_4_var_4_obj   | 4 | 4   | $-0\leq \bf{x} \leq 1$                   |         |
+| Deb-Thiele-Laumanns-Zitzler function N.2| DTLZ_N2_5_var_4_obj   | 5 | 4   | $-0\leq \bf{x} \leq 1$                   |         |
+| Deb-Thiele-Laumanns-Zitzler function N.2| DTLZ_N2_5_var_5_obj   | 5 | 5   | $-0\leq \bf{x} \leq 1$                   |         |
+| Deb-Thiele-Laumanns-Zitzler function N.2| DTLZ_N2_10_var_5_obj  | 10| 5   | $-0\leq \bf{x} \leq 1$                   |         |
+| Deb-Thiele-Laumanns-Zitzler function N.3| DTLZ_N3_3_var_3_obj   | 3 | 3   | $-0\leq \bf{x} \leq 1$                   |         |
+| Deb-Thiele-Laumanns-Zitzler function N.3| DTLZ_N3_4_var_3_obj   | 4 | 3   | $-0\leq \bf{x} \leq 1$                   |         |
+| Deb-Thiele-Laumanns-Zitzler function N.3| DTLZ_N3_10_var_5_obj  | 10| 5   | $-0\leq \bf{x} \leq 1$                   |         |
 | Fonseca–Fleming Function         | fonseca_fleming_1_var        | 2 | 1   |$-4\leq x\leq 4$                          |         |
 | Fonseca–Fleming Function         | fonseca_fleming_2_var        | 2 | 2   |$-4\leq x,y\leq 4$                        |         |
 | Fonseca–Fleming Function         | fonseca_fleming_3_var        | 2 | 3   |$-4\leq x,y,z\leq 4$                      |         |
