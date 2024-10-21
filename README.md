@@ -1077,14 +1077,15 @@ DTLZ (Deb-Thiele-Laumanns-Zitzler) problems are benchmark multi-objective optimi
 ```math
 \text{minimize}: 
 \begin{cases}
-f_i(x) = \left( \sum_{j=1}^{m} g_j(x) \right) \prod_{k=1}^{m} \cos\left(\frac{x_k \pi}{2}\right) \quad \text{for } i = 1, 2, \ldots, m-1\\
-f_m(x) = \left( \sum_{j=1}^{m} g_j(x) \right) \sin\left(\frac{x_1 \pi}{2}\right)\\
+f_i = 0.5 \cdot x_0 \cdot (1 - x_1) \cdot (1 + g(x_m)), \quad \text{for } i = 0, 1, \ldots, m
+\\
+f_m = 0.5 \cdot (1 - x_0) \cdot (1 + g(x_m))\\
 \end{cases}
 ```
 ```math
 \text{where}: 
 \begin{cases}
-g(x) = 1 + \frac{9}{m-1} \sum_{j=2}^{m} x_j
+g(x_m) = 100 \left( |x| + \sum_{i=0}^{m} (x_i - 0.5)^2 - \cos(20\pi(x_i - 0.5)) \right)
 \end{cases}
 ```
 
