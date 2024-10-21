@@ -1075,13 +1075,15 @@ DTLZ (Deb-Thiele-Laumanns-Zitzler) problems are benchmark multi-objective optimi
 
 
 ```math
+\text{minimize}: 
 \begin{cases}
 f_i(x) = \left( \sum_{j=1}^{m} g_j(x) \right) \prod_{k=1}^{m} \cos\left(\frac{x_k \pi}{2}\right) \quad \text{for } i = 1, 2, \ldots, m-1\\
 f_m(x) = \left( \sum_{j=1}^{m} g_j(x) \right) \sin\left(\frac{x_1 \pi}{2}\right)\\
-g(x) = 1 + \frac{9}{m-1} \sum_{j=2}^{m} x_j
 \end{cases}
 ```
-
+```math
+g(x) = 1 + \frac{9}{m-1} \sum_{j=2}^{m} x_j
+```
 
 Where:
 - $\mathbf{x}$ is the vector of decision variables.
@@ -1515,11 +1517,22 @@ Zitzler–Deb–Thiele's Function N.1 is a multi-dimensional, 2-objective functi
 \text{minimize}: 
 \begin{cases}
 f_{1}\mathbf(x) = x_1 \\
-f_{2}\mathbf(x) = g\mathbf(x)h(f_{1}\mathbf(x), g\mathbf(x))\\
-g\mathbf(x) = 1 + \frac{9}{n-1}\sum\limits_{i=2}^{n}x_{i}\\
-h(f_{1}\mathbf(x), g\mathbf(x)) = 1- \sqrt{\frac{f_{1}\mathbf(x)}{g\mathbf(x)}}
+f_{2}\mathbf(x) = g\mathbf(x)h(f_{1}\mathbf(x), g\mathbf(x))
 \end{cases}
 ```
+
+```math
+g\mathbf(x) = 1 + \frac{9}{n-1}\sum\limits_{i=2}^{n}x_{i}\\
+h(f_{1}\mathbf(x), g\mathbf(x)) = 1- \sqrt{\frac{f_{1}\mathbf(x)}{g\mathbf(x)}}
+```
+
+Where:
+- $\mathbf{x}$ is the vector of decision variables.
+- $g(x)$ is an auxiliary function.
+- $h(...)$ is an auxiliary function.
+- $n$ is the number of decision variables.
+
+
 
 | Num. Input Variables| Boundary | Constraints |
 |----------|----------|----------|
