@@ -1082,8 +1082,12 @@ f_m(x) = \left( \sum_{j=1}^{m} g_j(x) \right) \sin\left(\frac{x_1 \pi}{2}\right)
 \end{cases}
 ```
 ```math
+\text{where}: 
+\begin{cases}
 g(x) = 1 + \frac{9}{m-1} \sum_{j=2}^{m} x_j
+\end{cases}
 ```
+
 
 Where:
 - $\mathbf{x}$ is the vector of decision variables.
@@ -1522,8 +1526,11 @@ f_{2}\mathbf(x) = g\mathbf(x)h(f_{1}\mathbf(x), g\mathbf(x))
 ```
 
 ```math
+\text{where}: 
+\begin{cases}
 g\mathbf(x) = 1 + \frac{9}{n-1}\sum\limits_{i=2}^{n}x_{i}\\
 h(f_{1}\mathbf(x), g\mathbf(x)) = 1- \sqrt{\frac{f_{1}\mathbf(x)}{g\mathbf(x)}}
+\end{cases}
 ```
 
 Where:
@@ -1602,10 +1609,20 @@ Zitzler–Deb–Thiele's Function N.2 is a multi-dimensional, 2-objective functi
 \begin{cases}
 f_{1}\mathbf(x) = x_1 \\
 f_{2}\mathbf(x) = g\mathbf(x)h(f_{1}\mathbf(x), g\mathbf(x))\\
+\end{cases}
+```
+
+```math
+\text{where}: 
+\begin{cases}
 g\mathbf(x) = 1 + \frac{9}{n-1}\sum\limits_{i=2}^{n}x_{i}\\
 h(f_{1}\mathbf(x), g\mathbf(x)) = 1- (\frac{f_{1}\mathbf(x)}{g\mathbf(x)})^2
 \end{cases}
 ```
+
+
+
+
 
 | Num. Input Variables| Boundary | Constraints |
 |----------|----------|----------|
@@ -1676,10 +1693,19 @@ Zitzler–Deb–Thiele's Function N.3 is a multi-dimensional, 2-objective functi
 \begin{cases}
 f_{1}\mathbf(x) = x_1 \\
 f_{2}\mathbf(x) = g\mathbf(x)h(f_{1}\mathbf(x), g\mathbf(x))\\
+\end{cases}
+```
+
+```math
+\text{where}: 
+\begin{cases}
 g\mathbf(x) = 1 + \frac{9}{n-1}\sum\limits_{i=2}^{n}x_{i}\\
 h(f_{1}\mathbf(x), g\mathbf(x)) = 1- \sqrt{\frac{f_{1}\mathbf(x)}{g\mathbf(x)}} - (\frac{f_{1}\mathbf(x)}{g\mathbf(x)})\sin(10\pi f_{1}\mathbf(x))
 \end{cases}
 ```
+
+
+
 
 | Num. Input Variables| Boundary | Constraints |
 |----------|----------|----------|
@@ -1745,10 +1771,19 @@ Zitzler–Deb–Thiele's Function N.4 is a multi-dimensional, 2-objective functi
 \begin{cases}
 f_{1}\mathbf(x) = x_1 \\
 f_{2}\mathbf(x) = g\mathbf(x)h(f_{1}\mathbf(x), g\mathbf(x))\\
+\end{cases}
+```
+
+```math
+\text{where}: 
+\begin{cases}
 g\mathbf(x) = 1 + 10*(n-1) + \sum\limits_{i=2}^{n}x_{i}^2-10\cos(4\pi x_{i})\\
 h(f_{1}\mathbf(x), g\mathbf(x)) = 1- \sqrt{\frac{f_{1}\mathbf(x)}{g\mathbf(x)}} 
 \end{cases}
 ```
+
+
+
 
 | Num. Input Variables| Boundary | Constraints |
 |----------|----------|----------|
@@ -1819,10 +1854,17 @@ Zitzler–Deb–Thiele's Function N.6 is a 2-dimensional, 2-objective function c
 \begin{cases}
 f_{1}\mathbf(x) = 1-\exp(-4x_{1})\sin^{6}(6\pi x_1) \\
 f_{2}\mathbf(x) = g\mathbf(x)h(f_{1}\mathbf(x), g\mathbf(x))\\
+\end{cases}
+```
+
+```math
+\text{where}: 
+\begin{cases}
 g\mathbf(x) = 1 + 9\frac{\sum\limits_{i=2}^{n}x_{i}}{n-1}\\
 h(f_{1}\mathbf(x), g\mathbf(x)) = 1- (\frac{f_{1}\mathbf(x)}{g\mathbf(x)})^2
 \end{cases}
 ```
+
 
 | Num. Input Variables| Boundary | Constraints |
 |----------|----------|----------|
@@ -1850,9 +1892,6 @@ For data collection replicability, the following directories use the ZDT N.6 fun
 | Zitzler–Deb–Thiele's function N.6| ZDT_N6_9_var  | 2 | 9   | $0\leq \bf{x} \leq 1$                    |         |
 | Zitzler–Deb–Thiele's function N.6| ZDT_N6_10_var | 2 | 10  | $0\leq \bf{x} \leq 1$                    |         |
 | Zitzler–Deb–Thiele's function N.6| ZDT_N6_gen    | 2 |1-10+| $0\leq \bf{x} \leq 1$                    |         |
-
-
-
 
 
 
