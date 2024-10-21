@@ -1987,7 +1987,7 @@ Where:
 
 
 
-AntennaCAT Function 13 is a function with single and multi-objective forms. It is designed to have a vertical 'pareto front'
+AntennaCAT Function 13 is a function with single and multi-objective forms. It is designed to have a vertical 'pareto front', which performs poorly on several optimizers. The function has more terms than necessary to increase computational cost.
 
 ```math
 \begin{align*}
