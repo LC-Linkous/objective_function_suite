@@ -1077,9 +1077,8 @@ DTLZ (Deb-Thiele-Laumanns-Zitzler) problems are benchmark multi-objective optimi
 ```math
 \text{minimize}: 
 \begin{cases}
-f_i = 0.5 \cdot x_0 \cdot (1 - x_1) \cdot (1 + g(x_m)), \quad \text{for } i = 0, 1, \ldots, m
-\\
-f_m = 0.5 \cdot (1 - x_0) \cdot (1 + g(x_m))\\
+f_i = 0.5 \cdot x_0 \cdot (1 - x_1) \cdot (1 + g(x_m)), \quad \text{for } i = 0, 1, \ldots, m\\
+f_m = 0.5 \cdot (1 - x_0) \cdot (1 + g(x_m))
 \end{cases}
 ```
 ```math
@@ -1131,15 +1130,16 @@ DTLZ (Deb-Thiele-Laumanns-Zitzler) problems are benchmark multi-objective optimi
 ```math
 \text{minimize}: 
 \begin{cases}
-f_i(x) = \left(1 + g(x)\right) \prod_{k=1}^{m-i} \cos(x_k^{\alpha} \cdot \frac{\pi}{2}) \quad \text{for } i = 1, 2, \ldots, m-1\\
-f_m(x) = \left(1 + g(x)\right) \sin(x_1^{\alpha} \cdot \frac{\pi}{2})\\
+f_i = (1 + g(x_m)) \prod_{j}^{m-i} \cos^2\left(\frac{\pi x_j}{2}\right) \prod_{j=m-i+1}^{m-1} \sin^2\left(\frac{\pi x_j}{2}\right), \quad \text{for } i = 0, 1, \ldots, m-1
+\\
+f_m = (1 + g(x_m)) \cdot \sin\left(\frac{\pi x_0}{2}\right)
 \end{cases}
 ```
 
 ```math
 \text{where}: 
 \begin{cases}
-g(x) = \sum_{j=2}^{m} \left(x_j - 0.5\right)^2
+g(x_m) = \sum_{x_i \in x_m} (x_i - 0.5)^2
 \end{cases}
 ```
 
@@ -1182,15 +1182,15 @@ DTLZ (Deb-Thiele-Laumanns-Zitzler) problems are benchmark multi-objective optimi
 ```math
 \text{minimize}: 
 \begin{cases}
-f_i(x) = \left(1 + g(x)\right) \prod_{k=1}^{m-i} \cos(x_k^{\alpha} \cdot \frac{\pi}{2}) \quad \text{for } i = 1, 2, \ldots, m-1\\
-f_m(x) = \left(1 + g(x)\right) \sin(x_1^{\alpha} \cdot \frac{\pi}{2})\\
+f_i = (1 + g(x_m)) \cos\left(\frac{\pi x_0}{2}\right) \prod_{j=1}^{m-2} \sin\left(\frac{\pi x_j}{2}\right), \quad \text{for } i = 0, 1, \ldots, m-1//
+f(x_m) = (1 + g(x_m)) \cdot \sin\left(\frac{\pi x_0}{2}\right)\\
 \end{cases}
 ```
 
 ```math
 \text{where}: 
 \begin{cases}
-g(x) = \sum_{j=2}^{m} \left(x_j - 0.5\right)^2
+g(x_m) = 100 \left( |x| + \sum_{i=0}^{m} (x_i - 0.5)^2 - \cos(20\pi(x_i - 0.5)) \right)
 \end{cases}
 ```
 
@@ -2220,14 +2220,16 @@ AntennaCAT Function 12 is a function with single and multi-objective forms. In m
 
 
 ```math
-f(\mathbf{x}_i) = \frac{1}{n} \left[ \sum_{j=0}^{n} \left( \cos\left(\frac{i \pi x_j}{n}\right) + \sin\left(\frac{i \pi x_j}{n}\right) \right) \right] \\
-f({x_n}) = \sin\left(\frac{\pi x_{M-1}}{2}\right)
+f_i = \sum_{j=1}^{M-1} \cos\left(\frac{\pi x_j}{2}\right) + \sin\left(\frac{\pi x_i}{2}\right), \quad \text{for } i = 0, 1, \ldots, M-1
+\\
+f_M = \sin\left(\frac{\pi x_{M-1}}{2}\right)
 ```
 
 Where:
 - $x$ is an array of inputs.
 - $x_i$ is the array of inputs from $x_0$ to $x_{n-1}$
 - $n$ is the number of inputs.
+- $M$ is the number of objective functions.
 
 
 For data collection replicability, the following directories use the AntennaCAT function 12 with a variety of pre-set dimensionality:
