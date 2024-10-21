@@ -1075,8 +1075,21 @@ DTLZ (Deb-Thiele-Laumanns-Zitzler) problems are benchmark multi-objective optimi
 
 
 ```math
-Equation TBA. 
+f_i(x) = \left( \sum_{j=1}^{m} g_j(x) \right) \prod_{k=1}^{m} \cos\left(\frac{x_k \pi}{2}\right) \quad \text{for } i = 1, 2, \ldots, m-1 \\
+f_m(x) = \left( \sum_{j=1}^{m} g_j(x) \right) \sin\left(\frac{x_1 \pi}{2}\right) \\
+g(x) = 1 + \frac{9}{m-1} \sum_{j=2}^{m} x_j
+
 ```
+
+
+Where:
+- $\mathbf{x}$ is the vector of decision variables.
+- $x_i$ represents the $i$-th element of the input vector $\mathbf{x}$.
+- $g(x)$ is an auxiliary function
+- $m$ is the number of objectives.
+- $n$ is the number of decision variables.
+
+
 
 
 For data collection replicability, the following directories use the DTLZ N.1 function with a variety of pre-set dimensionality:
@@ -2409,11 +2422,23 @@ Specific reference links:
 
 
 
+* https://pymoo.org/problems/many/dtlz.html
+* https://esa.github.io/pagmo2/docs/cpp/problems/dtlz.html 
+* https://www.egr.msu.edu/~kdeb/papers/k2006001.pdf 
+*
+
+
 # Related Publications
 First mention of objective function testing:
 
 L. Linkous, J. Lundquist, M. Suche and E. Topsakal, "Machine Learning Assisted Hyperparameter Tuning for Optimization," 2024 IEEE INC-USNC-URSI Radio Science Meeting (Joint with AP-S Symposium), Florence, Italy, 2024, pp. 107-108, doi: 10.23919/INC-USNC-URSI61303.2024.10632482.
 
+The dissertation listing the functions and their usage: 
+
+
+L. Linkous, “Machine Learning Assisted Optimization for Calculation and Automated Tuning of Antennas,” VCU Scholars Compass, 2024. https://scholarscompass.vcu.edu/etd/7841/ (accessed Oct. 21, 2024).
+
+‌
 
 Other Publications:
 
@@ -2435,4 +2460,7 @@ If citing a specific objective function, please site the originating literature 
 
 To cite this repository, or the AntennaCAT function set, please use the following:
 
-L. Linkous, J. Lundquist, M. Suche and E. Topsakal, "Machine Learning Assisted Hyperparameter Tuning for Optimization," 2024 IEEE INC-USNC-URSI Radio Science Meeting (Joint with AP-S Symposium), Florence, Italy, 2024, pp. 107-108, doi: 10.23919/INC-USNC-URSI61303.2024.10632482.
+L. Linkous, “Machine Learning Assisted Optimization for Calculation and Automated Tuning of Antennas,” VCU Scholars Compass, 2024. https://scholarscompass.vcu.edu/etd/7841/ (accessed Oct. 21, 2024).
+
+This is‌ the dissertaion describing the usage of the functions mentioned in this repository as of Oct. 2024. 
+
