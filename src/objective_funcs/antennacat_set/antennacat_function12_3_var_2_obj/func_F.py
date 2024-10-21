@@ -14,12 +14,15 @@ def func_F(X, NO_OF_OUTS=1):
     F = np.zeros((NO_OF_OUTS))
     noErrors = True
     try:
-        M = len(X) 
+        M = len(X)
         for i in range(NO_OF_OUTS):
-            sum_value = sum(np.cos((i * np.pi * x_j) / M) + np.sin((i * np.pi * x_j) / M) for x_j in X)
-            F[i] = (1 / M) * sum_value
+            if i < M - 1:
+                F[i] = sum(np.cos((np.pi * x_j) / 2) for x_j in X) + np.sin((np.pi * X[i]) / 2)
+            else:
+                F[i] = np.sin((np.pi * X[M - 1]) / 2)
 
     except Exception as e:
         print(e)
         noErrors = False
     return F, noErrors
+
