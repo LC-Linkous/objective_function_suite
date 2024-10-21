@@ -2012,14 +2012,18 @@ For data collection replicability, the following directories use the AntennaCAT 
 
 AntennaCAT Function 12 is a function with single and multi-objective forms. In multi-objective forms this function forms a 'horseshoe crab' pattern
 
+
 ```math
 \begin{align*}
-f(\mathbf{x}) = 0.5 * \sin(\prod(\mathbf{x})+ x_0^3)  + sin(x_0^2) 
-\end{align*}
+f(\mathbf{x_i}) = \frac{1}{n} \left[ \sum_{j=0}^{n} \left( \cos\left(\frac{i \pi x_j}{n}\right) + \sin\left(\frac{i \pi x_j}{n}\right) \right) \right] 
+\end{align*}\\
+f(\mathbf{x_n}) = \sin\left(\frac{\pi x_{M-1}}{2}\right)
+
 ```
 
 Where:
 - $x$ is an array of inputs.
+- $x_i$ is the array of inputs from $x_0$ to $x_{n-1}$
 - $n$ is the number of inputs.
 
 
@@ -2061,6 +2065,7 @@ AntennaCAT Function 13 is a function with single and multi-objective forms. It i
 \begin{align*}
 f(\mathbf{x}) = \frac{1}{n} \left[ \sum_{j=0}^{n} \left( \cos\left(\frac{i \pi x_j}{n}\right) + \sin\left(\frac{i \pi x_j}{n}\right) \right) \right] 
 \end{align*}
+
 ```
 
 Where:
@@ -2194,7 +2199,7 @@ For data collection replicability, the following directories use the AntennaCAT 
 |Function | Directory Name| Num. Objective Functions | Num. Inputs | Example Boundaries | Constraints |
 |----------|----------|----------|----------|----------|----------|
 | Rosenbrock Function Constrained to Disk                | rosenbrock_disk            | 2 | 1   | $-1.5\leq x,y \leq 1.5$        |    yes  |
-| Rosenbrock Function Constrained with a Cubic and a Line| rosenbrock_cubic_and_line  | 2 | 1   | $-1.5\leq x \leq 1.5$ <\br> $-0.5\leq x \leq 2.5$ |    yes  |
+| Rosenbrock Function Constrained with a Cubic and a Line| rosenbrock_cubic_and_line  | 2 | 1   | $-1.5\leq x \leq 1.5$ <br> $-0.5\leq x \leq 2.5$ |    yes  |
 
 
 
