@@ -2129,7 +2129,6 @@ Where:
 
 |Function | Directory Name| Num. Objective Functions | Num. Inputs | Example Boundaries | Constraints |
 |----------|----------|----------|----------|----------|----------|
-
 | AntennaCAT Set Function 1 | antennacat_function_1                | 1   | 1   | $-0\leq x \leq 1$                   |         |
 | AntennaCAT Set Function 2 | antennacat_function_2                | 1   | 1   | $-0\leq x \leq 1$                   |         |
 | AntennaCAT Set Function 3 | antennacat_function_3                | 1   | 1   | $-0\leq x \leq 1$                   |         |
