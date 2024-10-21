@@ -1128,8 +1128,28 @@ DTLZ (Deb-Thiele-Laumanns-Zitzler) problems are benchmark multi-objective optimi
 
 
 ```math
-Equation TBA. 
+\text{minimize}: 
+\begin{cases}
+f_i(x) = \left(1 + g(x)\right) \prod_{k=1}^{m-i} \cos(x_k^{\alpha} \cdot \frac{\pi}{2}) \quad \text{for } i = 1, 2, \ldots, m-1\\
+f_m(x) = \left(1 + g(x)\right) \sin(x_1^{\alpha} \cdot \frac{\pi}{2})\\
+\end{cases}
 ```
+
+```math
+\text{where}: 
+\begin{cases}
+g(x) = \sum_{j=2}^{m} \left(x_j - 0.5\right)^2
+\end{cases}
+```
+
+
+
+Where:
+- $\mathbf{x}$ is the vector of decision variables.
+- $x_i$ represents the $i$-th element of the input vector $\mathbf{x}$.
+- $g(x)$ is an auxiliary function
+- $m$ is the number of objectives.
+- $n$ is the number of decision variables.
 
 
 
@@ -1159,9 +1179,28 @@ DTLZ (Deb-Thiele-Laumanns-Zitzler) problems are benchmark multi-objective optimi
 
 
 ```math
-Equation TBA. 
+\text{minimize}: 
+\begin{cases}
+f_i(x) = \left(1 + g(x)\right) \prod_{k=1}^{m-i} \cos(x_k^{\alpha} \cdot \frac{\pi}{2}) \quad \text{for } i = 1, 2, \ldots, m-1\\
+f_m(x) = \left(1 + g(x)\right) \sin(x_1^{\alpha} \cdot \frac{\pi}{2})\\
+\end{cases}
 ```
 
+```math
+\text{where}: 
+\begin{cases}
+g(x) = \sum_{j=2}^{m} \left(x_j - 0.5\right)^2
+\end{cases}
+```
+
+
+
+Where:
+- $\mathbf{x}$ is the vector of decision variables.
+- $x_i$ represents the $i$-th element of the input vector $\mathbf{x}$.
+- $g(x)$ is an auxiliary function
+- $m$ is the number of objectives.
+- $n$ is the number of decision variables.
 
 For data collection replicability, the following directories use the DTLZ N.3 function with a variety of pre-set dimensionality:
 |Function | Directory Name| Num. Objective Functions | Num. Inputs | Example Boundaries | Constraints |
@@ -2090,10 +2129,8 @@ Where:
 AntennaCAT Function 10 is a function with single and multi-objective forms. 
 
 ```math
-\begin{align*}
 f(\mathbf{x}) = \sin\left(\prod_{i=0}^{x_{n-1}} x_i\right) + \cos(x_0^3)\\
 f(\mathbf{x_{n-1}}) = 1 - x_0
-\end{align*}
 ```
 
 Where:
@@ -2131,9 +2168,7 @@ For data collection replicability, the following directories use the AntennaCAT 
 AntennaCAT Function 11 is a function with single and multi-objective forms. 
 
 ```math
-\begin{align*}
 f(\mathbf{x}) = 0.5 * \sin(\prod(\mathbf{x})+ x_0^3)  + sin(x_0^2) 
-\end{align*}
 ```
 
 Where:
@@ -2229,9 +2264,7 @@ For data collection replicability, the following directories use the AntennaCAT 
 AntennaCAT Function 13 is a function with single and multi-objective forms. It is designed to have a vertical 'pareto front', which performs poorly on several optimizers. The function has more terms than necessary to increase computational cost.
 
 ```math
-\begin{align*}
 f(\mathbf{x}) = \frac{1}{n} \left[ \sum_{j=0}^{n} \left( \cos\left(\frac{i \pi x_j}{n}\right) + \sin\left(\frac{i \pi x_j}{n}\right) \right) \right] 
-\end{align*}
 
 ```
 
