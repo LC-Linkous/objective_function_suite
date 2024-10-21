@@ -1413,6 +1413,28 @@ h(f_{1}\mathbf(x), g\mathbf(x)) = 1- \sqrt{\frac{f_{1}\mathbf(x)}{g\mathbf(x)}}
 In this repository, Zitzler–Deb–Thiele's Function N.1 is evaluated and shown above with 1 input, 2 input, and 3 input variations. A generalized function is included for completeness (and to retain name scheme), but the folder does not include the graphing function. 
 
 
+
+
+For data collection replicability, the following directories use the ZDT N.1 function with a variety of pre-set dimensionality:
+
+|Function | Directory Name| Num. Objective Functions | Num. Inputs | Example Boundaries | Constraints |
+|----------|----------|----------|----------|----------|----------|
+| Zitzler–Deb–Thiele's function N.1| ZDT_N1_1_var  | 2 | 1   | $-0\leq x \leq 1$                        |         |
+| Zitzler–Deb–Thiele's function N.1| ZDT_N1_2_var  | 2 | 2   | $-0\leq x,y \leq 1$                      |         |
+| Zitzler–Deb–Thiele's function N.1| ZDT_N1_3_var  | 2 | 3   | $-0\leq x,y,z \leq 1$                    |         |
+| Zitzler–Deb–Thiele's function N.1| ZDT_N1_4_var  | 2 | 4   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.1| ZDT_N1_5_var  | 2 | 5   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.1| ZDT_N1_6_var  | 2 | 6   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.1| ZDT_N1_7_var  | 2 | 7   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.1| ZDT_N1_8_var  | 2 | 8   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.1| ZDT_N1_9_var  | 2 | 9   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.1| ZDT_N1_10_var | 2 | 10  | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.1| ZDT_N1_20_var | 2 | 20  | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.1| ZDT_N1_gen    | 2 |1-30+| $-0\leq \bf{x} \leq 1$                   |         |
+
+
+
+
 #### Zitzler–Deb–Thiele's Function N.2
 
 ---
@@ -1462,6 +1484,28 @@ h(f_{1}\mathbf(x), g\mathbf(x)) = 1- (\frac{f_{1}\mathbf(x)}{g\mathbf(x)})^2
 | 1-30| $0\leq x\leq 1$ <br>  $1\leq i \leq 30$ |  | 
  
 In this repository, Zitzler–Deb–Thiele's Function N.2 is evaluated and shown above with 1 input, 2 input, and 3 input variations. A generalized function is included for completeness (and to retain name scheme), but the folder does not include the graphing function. 
+
+
+
+
+
+For data collection replicability, the following directories use the ZDT N.2 function with a variety of pre-set dimensionality:
+
+|Function | Directory Name| Num. Objective Functions | Num. Inputs | Example Boundaries | Constraints |
+|----------|----------|----------|----------|----------|----------|
+| Zitzler–Deb–Thiele's function N.2| ZDT_N2_1_var  | 2 | 1   | $-0\leq x \leq 1$                        |         |
+| Zitzler–Deb–Thiele's function N.2| ZDT_N2_2_var  | 2 | 2   | $-0\leq x,y \leq 1$                      |         |
+| Zitzler–Deb–Thiele's function N.2| ZDT_N2_3_var  | 2 | 3   | $-0\leq x,y,z \leq 1$                    |         |
+| Zitzler–Deb–Thiele's function N.2| ZDT_N2_4_var  | 2 | 4   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.2| ZDT_N2_5_var  | 2 | 5   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.2| ZDT_N2_6_var  | 2 | 6   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.2| ZDT_N2_7_var  | 2 | 7   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.2| ZDT_N2_8_var  | 2 | 8   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.2| ZDT_N2_9_var  | 2 | 9   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.2| ZDT_N2_10_var | 2 | 10  | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.2| ZDT_N2_20_var | 2 | 20  | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.2| ZDT_N2_gen    | 2 |1-30+| $-0\leq \bf{x} \leq 1$                   |         |
+
 
 
 
@@ -1517,6 +1561,27 @@ In this repository, Zitzler–Deb–Thiele's Function N.3 is evaluated and shown
 
 
 
+
+For data collection replicability, the following directories use the ZDT N.3 function with a variety of pre-set dimensionality:
+
+|Function | Directory Name| Num. Objective Functions | Num. Inputs | Example Boundaries | Constraints |
+|----------|----------|----------|----------|----------|----------|
+| Zitzler–Deb–Thiele's function N.3| ZDT_N3_1_var  | 2 | 1   | $-0\leq x \leq 1$                        |         |
+| Zitzler–Deb–Thiele's function N.3| ZDT_N3_2_var  | 2 | 2   | $-0\leq x,y \leq 1$                      |         |
+| Zitzler–Deb–Thiele's function N.3| ZDT_N3_3_var  | 2 | 3   | $-0\leq x,y,z \leq 1$                    |         |
+| Zitzler–Deb–Thiele's function N.3| ZDT_N3_4_var  | 2 | 4   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.3| ZDT_N3_5_var  | 2 | 5   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.3| ZDT_N3_6_var  | 2 | 6   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.3| ZDT_N3_7_var  | 2 | 7   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.3| ZDT_N3_8_var  | 2 | 8   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.3| ZDT_N3_9_var  | 2 | 9   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.3| ZDT_N3_10_var | 2 | 10  | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.3| ZDT_N3_20_var | 2 | 20  | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.3| ZDT_N3_gen    | 2 |1-30+| $-0\leq \bf{x} \leq 1$                   |         |
+
+
+
+
 #### Zitzler–Deb–Thiele's Function N.4
 
 ---
@@ -1537,7 +1602,7 @@ In this repository, Zitzler–Deb–Thiele's Function N.3 is evaluated and shown
  <p align="center">
  <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/zitzler_deb_thiele_N4_plots_pareto_1.png" height="300" >
 </p>
-<p align="center">Zitzler–Deb–Thiele's Function N.4 Pareto Front for 2 to 7 Variables (BEING ADDED)</p>
+<p align="center">Zitzler–Deb–Thiele's Function N.4 Pareto Front for 2 to 6 Variables</p>
 
 
 Zitzler–Deb–Thiele's Function N.4 is a multi-dimensional, 2-objective function commonly used for optimization performance evaluation. (Viennet R, Fonteix C, Marc I (1996) Multicriteria optimization using a genetic algorithm for determining a Pareto set. Intl J Syst Sci
@@ -1561,6 +1626,27 @@ h(f_{1}\mathbf(x), g\mathbf(x)) = 1- \sqrt{\frac{f_{1}\mathbf(x)}{g\mathbf(x)}}
 | 2-10| $0\leq x_1\leq 1$ <br> $-5\leq x_i\leq 5$ <br> $2\leq i \leq 10$ |  | 
 
 In this repository, Zitzler–Deb–Thiele's Function N.4 is evaluated and shown above with 2 input and 3 input variations. A generalized function is included for completeness (and to retain name scheme), but the folder does not include the graphing function. 
+
+
+
+
+
+For data collection replicability, the following directories use the ZDT N.1 function with a variety of pre-set dimensionality:
+
+|Function | Directory Name| Num. Objective Functions | Num. Inputs | Example Boundaries | Constraints |
+|----------|----------|----------|----------|----------|----------|
+| Zitzler–Deb–Thiele's function N.4| ZDT_N4_2_var  | 2 | 2   | $0\leq x_1\leq 1$ <br> $-5\leq x_i\leq 5$|         |
+| Zitzler–Deb–Thiele's function N.4| ZDT_N4_3_var  | 2 | 3   | $0\leq x_1\leq 1$ <br> $-5\leq x_i\leq 5$|         |
+| Zitzler–Deb–Thiele's function N.4| ZDT_N4_4_var  | 2 | 4   | $0\leq x_1\leq 1$ <br> $-5\leq x_i\leq 5$|         |
+| Zitzler–Deb–Thiele's function N.4| ZDT_N4_5_var  | 2 | 5   | $0\leq x_1\leq 1$ <br> $-5\leq x_i\leq 5$|         |
+| Zitzler–Deb–Thiele's function N.4| ZDT_N4_6_var  | 2 | 6   | $0\leq x_1\leq 1$ <br> $-5\leq x_i\leq 5$|         |
+| Zitzler–Deb–Thiele's function N.4| ZDT_N4_7_var  | 2 | 7   | $0\leq x_1\leq 1$ <br> $-5\leq x_i\leq 5$|         |
+| Zitzler–Deb–Thiele's function N.4| ZDT_N4_8_var  | 2 | 8   | $0\leq x_1\leq 1$ <br> $-5\leq x_i\leq 5$|         |
+| Zitzler–Deb–Thiele's function N.4| ZDT_N4_9_var  | 2 | 9   | $0\leq x_1\leq 1$ <br> $-5\leq x_i\leq 5$|         |
+| Zitzler–Deb–Thiele's function N.4| ZDT_N4_10_var | 2 | 10  | $0\leq x_1\leq 1$ <br> $-5\leq x_i\leq 5$|         |
+| Zitzler–Deb–Thiele's function N.4| ZDT_N4_20_var | 2 | 20  | $0\leq x_1\leq 1$ <br> $-5\leq x_i\leq 5$|         |
+| Zitzler–Deb–Thiele's function N.4| ZDT_N4_gen    | 2 |2-10+| $0\leq x_1\leq 1$ <br> $-5\leq x_i\leq 5$|         |
+
 
 
 
@@ -1617,18 +1703,25 @@ h(f_{1}\mathbf(x), g\mathbf(x)) = 1- (\frac{f_{1}\mathbf(x)}{g\mathbf(x)})^2
 In this repository, Zitzler–Deb–Thiele's Function N.6 is evaluated and shown above with 1 input, 2 input, and 3 input variations. A generalized function is included for completeness (and to retain name scheme), but the folder does not include the graphing function. 
 
 
-**Additional Constraints**
 
-<p align="center">
- <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/ZDT_N6_2var_output_additional_constraints.png" height="300" >
-</p>
- <p align="center">Zitzler–Deb–Thiele's Function N.6 Feasible Decision Space and Objective Space with Pareto Front for 2 Variables, with Additional Constraints Applied</p>
-<p align="center">
- <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/ZDT_N6_3var_output_additional_constraints.png" height="300" >
-</p>
- <p align="center">Zitzler–Deb–Thiele's Function N.6 Feasible Decision Space and Objective Space with Pareto Front for 3 Variables, with Additional Constraints Applied</p>
+For data collection replicability, the following directories use the ZDT N.6 function with a variety of pre-set dimensionality:
 
-Additional error checking and handling were added to this function's constr_F.py script to handle FloatingPointErrors caused by under/overflow. This additions were not observed to change the results of the Decision Space, Objective Space, or Pareto front. 
+|Function | Directory Name| Num. Objective Functions | Num. Inputs | Example Boundaries | Constraints |
+|----------|----------|----------|----------|----------|----------|
+| Zitzler–Deb–Thiele's function N.6| ZDT_N6_1_var  | 2 | 1   | $0\leq x \leq 1$                         |         |
+| Zitzler–Deb–Thiele's function N.6| ZDT_N6_2_var  | 2 | 2   | $0\leq x,y \leq 1$                       |         |
+| Zitzler–Deb–Thiele's function N.6| ZDT_N6_3_var  | 2 | 3   | $0\leq x,y,z \leq 1$                     |         |
+| Zitzler–Deb–Thiele's function N.6| ZDT_N6_4_var  | 2 | 4   | $0\leq \bf{x} \leq 1$                    |         |
+| Zitzler–Deb–Thiele's function N.6| ZDT_N6_5_var  | 2 | 5   | $0\leq \bf{x} \leq 1$                    |         |
+| Zitzler–Deb–Thiele's function N.6| ZDT_N6_6_var  | 2 | 6   | $0\leq \bf{x} \leq 1$                    |         |
+| Zitzler–Deb–Thiele's function N.6| ZDT_N6_7_var  | 2 | 7   | $0\leq \bf{x} \leq 1$                    |         |
+| Zitzler–Deb–Thiele's function N.6| ZDT_N6_8_var  | 2 | 8   | $0\leq \bf{x} \leq 1$                    |         |
+| Zitzler–Deb–Thiele's function N.6| ZDT_N6_9_var  | 2 | 9   | $0\leq \bf{x} \leq 1$                    |         |
+| Zitzler–Deb–Thiele's function N.6| ZDT_N6_10_var | 2 | 10  | $0\leq \bf{x} \leq 1$                    |         |
+| Zitzler–Deb–Thiele's function N.6| ZDT_N6_gen    | 2 |1-10+| $0\leq \bf{x} \leq 1$                    |         |
+
+
+
 
 
 
@@ -1675,7 +1768,27 @@ f(x, y) =  \left[(a-x)^2 + b(y-x^2)^2 \right]
 | $f(1,1)= 0$| $-1.5\leq x\leq 1.5$ <br> $-0.5\leq y\leq 2.5$ | $(x-1)^3-y \leq 0$ <br> $x+y-2\leq 0$ | 
 
 ## AntennaCAT Objective Function Set
-This section contains functions created for testing specific edge cases with the optimizers integrated with AntennaCAT. These functions are not attributed to any particular author and do not come from any particular literature. Additional functions will be added as they are included in the benchmarking process.
+This section contains functions created for testing specific edge cases with the optimizers integrated with AntennaCAT. These functions are not attributed to any particular author and do not come from any particular literature. Additional functions will be added as they are included in the benchmarking process. These additions are for record purposes only - the existing function directories can easily be edited.
+
+
+The AntennaCAT function set was used to fill in 'gaps' left by using commonly referenced functions in literature. This was NOT a shortcoming of any literature or available works - rather, these functions are meant to explore specific cases, and to stress test optimizers/software. The table directly below shows the input/output combinations used to create a training data set. The AntennaCAT objective function set contains additional input/output combinations that were explored but ultimately unused as final physical design parameters were settled on. 
+
+
+
+|Num. Inputs | Num. Outputs|Num. Inputs | Num. Outputs|Num. Inputs | Num. Outputs|
+|------------|-------------|------------|-------------|------------|-------------|
+|     3      |      3      |     3      |      4      |     3      |      5      |
+|     4      |      3      |     4      |      4      |     4      |      5      |
+|     5      |      3      |     5      |      4      |     5      |      5      |
+|     6      |      3      |     6      |      4      |     6      |      5      |
+|     12     |      3      |     12     |      4      |     12     |      5      |
+|     15     |      3      |     15     |      4      |     15     |      5      |
+|     20     |      3      |     20     |      4      |     20     |      5      |
+
+
+
+
+
 
 #### AntennaCAT Function 1
 
@@ -1908,23 +2021,90 @@ Where:
 | Zitzler–Deb–Thiele's function N.1| ZDT_N1_1_var  | 2 | 1   | $-0\leq x \leq 1$                        |         |
 | Zitzler–Deb–Thiele's function N.1| ZDT_N1_2_var  | 2 | 2   | $-0\leq x,y \leq 1$                      |         |
 | Zitzler–Deb–Thiele's function N.1| ZDT_N1_3_var  | 2 | 3   | $-0\leq x,y,z \leq 1$                    |         |
-| Zitzler–Deb–Thiele's function N.1| ZDT_N1_gen    | 2 |1-30+| $-0\leq x... \leq 1$                     |         |
+| Zitzler–Deb–Thiele's function N.1| ZDT_N1_4_var  | 2 | 4   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.1| ZDT_N1_5_var  | 2 | 5   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.1| ZDT_N1_6_var  | 2 | 6   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.1| ZDT_N1_7_var  | 2 | 7   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.1| ZDT_N1_8_var  | 2 | 8   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.1| ZDT_N1_9_var  | 2 | 9   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.1| ZDT_N1_10_var | 2 | 10  | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.1| ZDT_N1_20_var | 2 | 20  | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.1| ZDT_N1_gen    | 2 |1-30+| $-0\leq \bf{x} \leq 1$                   |         |
 | Zitzler–Deb–Thiele's function N.2| ZDT_N2_1_var  | 2 | 1   | $-0\leq x \leq 1$                        |         |
 | Zitzler–Deb–Thiele's function N.2| ZDT_N2_2_var  | 2 | 2   | $-0\leq x,y \leq 1$                      |         |
 | Zitzler–Deb–Thiele's function N.2| ZDT_N2_3_var  | 2 | 3   | $-0\leq x,y,z \leq 1$                    |         |
-| Zitzler–Deb–Thiele's function N.2| ZDT_N2_gen    | 2 |1-30+| $-0\leq x,... \leq 1$                    |         |
+| Zitzler–Deb–Thiele's function N.2| ZDT_N2_4_var  | 2 | 4   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.2| ZDT_N2_5_var  | 2 | 5   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.2| ZDT_N2_6_var  | 2 | 6   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.2| ZDT_N2_7_var  | 2 | 7   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.2| ZDT_N2_8_var  | 2 | 8   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.2| ZDT_N2_9_var  | 2 | 9   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.2| ZDT_N2_10_var | 2 | 10  | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.2| ZDT_N2_20_var | 2 | 20  | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.2| ZDT_N2_gen    | 2 |1-30+| $-0\leq \bf{x} \leq 1$                   |         |
 | Zitzler–Deb–Thiele's function N.3| ZDT_N3_1_var  | 2 | 1   | $-0\leq x \leq 1$                        |         |
 | Zitzler–Deb–Thiele's function N.3| ZDT_N3_2_var  | 2 | 2   | $-0\leq x,y \leq 1$                      |         |
 | Zitzler–Deb–Thiele's function N.3| ZDT_N3_3_var  | 2 | 3   | $-0\leq x,y,z \leq 1$                    |         |
-| Zitzler–Deb–Thiele's function N.3| ZDT_N3_gen    | 2 |1-30+| $-0\leq x,... \leq 1$                    |         |
+| Zitzler–Deb–Thiele's function N.3| ZDT_N3_4_var  | 2 | 4   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.3| ZDT_N3_5_var  | 2 | 5   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.3| ZDT_N3_6_var  | 2 | 6   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.3| ZDT_N3_7_var  | 2 | 7   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.3| ZDT_N3_8_var  | 2 | 8   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.3| ZDT_N3_9_var  | 2 | 9   | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.3| ZDT_N3_10_var | 2 | 10  | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.3| ZDT_N3_20_var | 2 | 20  | $-0\leq \bf{x} \leq 1$                   |         |
+| Zitzler–Deb–Thiele's function N.3| ZDT_N3_gen    | 2 |1-30+| $-0\leq \bf{x} \leq 1$                   |         |
 | Zitzler–Deb–Thiele's function N.4| ZDT_N4_2_var  | 2 | 2   | $0\leq x_1\leq 1$ <br> $-5\leq x_i\leq 5$|         |
 | Zitzler–Deb–Thiele's function N.4| ZDT_N4_3_var  | 2 | 3   | $0\leq x_1\leq 1$ <br> $-5\leq x_i\leq 5$|         |
+| Zitzler–Deb–Thiele's function N.4| ZDT_N4_4_var  | 2 | 4   | $0\leq x_1\leq 1$ <br> $-5\leq x_i\leq 5$|         |
+| Zitzler–Deb–Thiele's function N.4| ZDT_N4_5_var  | 2 | 5   | $0\leq x_1\leq 1$ <br> $-5\leq x_i\leq 5$|         |
+| Zitzler–Deb–Thiele's function N.4| ZDT_N4_6_var  | 2 | 6   | $0\leq x_1\leq 1$ <br> $-5\leq x_i\leq 5$|         |
+| Zitzler–Deb–Thiele's function N.4| ZDT_N4_7_var  | 2 | 7   | $0\leq x_1\leq 1$ <br> $-5\leq x_i\leq 5$|         |
+| Zitzler–Deb–Thiele's function N.4| ZDT_N4_8_var  | 2 | 8   | $0\leq x_1\leq 1$ <br> $-5\leq x_i\leq 5$|         |
+| Zitzler–Deb–Thiele's function N.4| ZDT_N4_9_var  | 2 | 9   | $0\leq x_1\leq 1$ <br> $-5\leq x_i\leq 5$|         |
+| Zitzler–Deb–Thiele's function N.4| ZDT_N4_10_var | 2 | 10  | $0\leq x_1\leq 1$ <br> $-5\leq x_i\leq 5$|         |
+| Zitzler–Deb–Thiele's function N.4| ZDT_N4_20_var | 2 | 20  | $0\leq x_1\leq 1$ <br> $-5\leq x_i\leq 5$|         |
 | Zitzler–Deb–Thiele's function N.4| ZDT_N4_gen    | 2 |2-10+| $0\leq x_1\leq 1$ <br> $-5\leq x_i\leq 5$|         |
 | Zitzler–Deb–Thiele's function N.6| ZDT_N6_1_var  | 2 | 1   | $0\leq x \leq 1$                         |         |
-| Zitzler–Deb–Thiele's function N.6| ZDT_N6_2_var  | 2 | 2   | $0\leq x \leq 1$                         |         |
-| Zitzler–Deb–Thiele's function N.6| ZDT_N6_3_var  | 2 | 3   | $0\leq x \leq 1$                         |         |
-| Zitzler–Deb–Thiele's function N.6| ZDT_N6_gen    | 2 |1-10+| $0\leq x \leq 1$                         |         |
+| Zitzler–Deb–Thiele's function N.6| ZDT_N6_2_var  | 2 | 2   | $0\leq x,y \leq 1$                       |         |
+| Zitzler–Deb–Thiele's function N.6| ZDT_N6_3_var  | 2 | 3   | $0\leq x,y,z \leq 1$                     |         |
+| Zitzler–Deb–Thiele's function N.6| ZDT_N6_4_var  | 2 | 4   | $0\leq \bf{x} \leq 1$                    |         |
+| Zitzler–Deb–Thiele's function N.6| ZDT_N6_5_var  | 2 | 5   | $0\leq \bf{x} \leq 1$                    |         |
+| Zitzler–Deb–Thiele's function N.6| ZDT_N6_6_var  | 2 | 6   | $0\leq \bf{x} \leq 1$                    |         |
+| Zitzler–Deb–Thiele's function N.6| ZDT_N6_7_var  | 2 | 7   | $0\leq \bf{x} \leq 1$                    |         |
+| Zitzler–Deb–Thiele's function N.6| ZDT_N6_8_var  | 2 | 8   | $0\leq \bf{x} \leq 1$                    |         |
+| Zitzler–Deb–Thiele's function N.6| ZDT_N6_9_var  | 2 | 9   | $0\leq \bf{x} \leq 1$                    |         |
+| Zitzler–Deb–Thiele's function N.6| ZDT_N6_10_var | 2 | 10  | $0\leq \bf{x} \leq 1$                    |         |
+| Zitzler–Deb–Thiele's function N.6| ZDT_N6_gen    | 2 |1-10+| $0\leq \bf{x} \leq 1$                    |         |
 
+
+
+### Constrained Objective Funtion Summary
+
+|Function | Directory Name| Num. Objective Functions | Num. Inputs | Example Boundaries | Constraints |
+|----------|----------|----------|----------|----------|----------|
+
+| Rosenbrock Function Constrained to Disk| ZDT_N1_1_var  | 2 | 1   | $-0\leq x \leq 1$                        |    yes  |
+| Rosenbrock Function Constrained with a Cubic and a Line| ZDT_N1_2_var  | 2 | 2   | $-0\leq x,y \leq 1$      |    yes  |
+
+
+### AntennaCAT Objective Funtion Summary
+
+
+
+|Function | Directory Name| Num. Objective Functions | Num. Inputs | Example Boundaries | Constraints |
+|----------|----------|----------|----------|----------|----------|
+
+| AntennaCAT Set Function 1 | antennacat_function_1                | 1   | 1   | $-0\leq x \leq 1$                   |         |
+| AntennaCAT Set Function 2 | antennacat_function_2                | 1   | 1   | $-0\leq x \leq 1$                   |         |
+| AntennaCAT Set Function 3 | antennacat_function_3                | 1   | 1   | $-0\leq x \leq 1$                   |         |
+| AntennaCAT Set Function 10| antennacat_function10_3_var_1_obj    | 3   | 1   | $-0\leq \be{x} \leq 1$              |         |
+| AntennaCAT Set Function 10| antennacat_function10_3_var_2_obj    | 3   | 2   | $-0\leq \be{x} \leq 1$              |         |
+| AntennaCAT Set Function 10| antennacat_function10_4_var_1_obj    | 4   | 1   | $-0\leq \be{x} \leq 1$              |         |
+| AntennaCAT Set Function 10| antennacat_function10_4_var_2_obj    | 4   | 2   | $-0\leq \be{x} \leq 1$              |         |
+| AntennaCAT Set Function 10| antennacat_function10_5_var_1_obj    | 5   | 1   | $-0\leq \be{x} \leq 1$              |         |
+| AntennaCAT Set Function 11| antennacat_function11_4_var_1_obj    | 4   | 1   | $-0\leq \be{x} \leq 1$              |         |
+| AntennaCAT Set Function 11| antennacat_function11_4_var_2_obj    | 4   | 2   | $-0\leq \be{x} \leq 1$              |         |
 
 
 # Future Development
