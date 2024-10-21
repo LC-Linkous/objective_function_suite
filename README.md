@@ -1096,24 +1096,21 @@ For data collection replicability, the following directories use the DTLZ N.1 fu
 ---
 
 <p align="center">
- <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/fonseca_fleming_plots_1_var.png" height="300" >
+ <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/DTLZ_N2_3_var_3_obj_plots.png" height="300" >
 </p>
-<p align="center">Fonseca Fleming Feasible Decision Space and Objective Space with Pareto Front for 1 Variable</p>
+<p align="center">Three Dimensional DTLZ N.2 with 3 Inputs, Constrained Input 0 to 1</p>
+
 
 
 DTLZ (Deb-Thiele-Laumanns-Zitzler) problems are benchmark multi-objective optimization challenges designed to evaluate the performance of optimization algorithms. They feature continuous decision variables, scalable objectives, and known Pareto fronts with varying complexities. Common DTLZ problems include DTLZ1 to DTLZ7, each offering unique structures and characteristics for testing algorithms on trade-offs between competing objectives.
 
 
 
+
 ```math
-\text{minimize}: 
-\begin{cases}
-f_{1}\mathbf(x) = x_1 \\
-f_{2}\mathbf(x) = g\mathbf(x)h(f_{1}\mathbf(x), g\mathbf(x))\\
-g\mathbf(x) = 1 + \frac{9}{n-1}\sum\limits_{i=2}^{n}x_{i}\\
-h(f_{1}\mathbf(x), g\mathbf(x)) = 1- \sqrt{\frac{f_{1}\mathbf(x)}{g\mathbf(x)}}
-\end{cases}
+Equation TBA. 
 ```
+
 
 
 For data collection replicability, the following directories use the DTLZ N.2 function with a variety of pre-set dimensionality:
@@ -1131,22 +1128,20 @@ For data collection replicability, the following directories use the DTLZ N.2 fu
 ---
 
 <p align="center">
- <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/fonseca_fleming_plots_1_var.png" height="300" >
+ <img src="https://github.com/LC-Linkous/objective_function_suite/blob/main/imgs/DTLZ_N3_3_var_3_obj_plots.png" height="300" >
 </p>
-<p align="center">Fonseca Fleming Feasible Decision Space and Objective Space with Pareto Front for 1 Variable</p>
+<p align="center">Three Dimensional DTLZ N.3 with 3 Inputs, Constrained Input 0 to 1</p>
+
+
 
 DTLZ (Deb-Thiele-Laumanns-Zitzler) problems are benchmark multi-objective optimization challenges designed to evaluate the performance of optimization algorithms. They feature continuous decision variables, scalable objectives, and known Pareto fronts with varying complexities. Common DTLZ problems include DTLZ1 to DTLZ7, each offering unique structures and characteristics for testing algorithms on trade-offs between competing objectives.
 
 
+
 ```math
-\text{minimize}: 
-\begin{cases}
-f_{1}\mathbf(x) = x_1 \\
-f_{2}\mathbf(x) = g\mathbf(x)h(f_{1}\mathbf(x), g\mathbf(x))\\
-g\mathbf(x) = 1 + \frac{9}{n-1}\sum\limits_{i=2}^{n}x_{i}\\
-h(f_{1}\mathbf(x), g\mathbf(x)) = 1- \sqrt{\frac{f_{1}\mathbf(x)}{g\mathbf(x)}}
-\end{cases}
+Equation TBA. 
 ```
+
 
 For data collection replicability, the following directories use the DTLZ N.3 function with a variety of pre-set dimensionality:
 |Function | Directory Name| Num. Objective Functions | Num. Inputs | Example Boundaries | Constraints |
